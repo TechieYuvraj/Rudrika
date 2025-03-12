@@ -22,7 +22,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/Singing.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -36,7 +36,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/xFactor.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -50,7 +50,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/Drama.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -64,7 +64,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/BeatBox.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -78,7 +78,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/DJwar.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -92,7 +92,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/Band.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -106,7 +106,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/CaseInvest.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -120,21 +120,7 @@ const events = [
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
-        image: "images/events/1.png",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
-        coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
-        ]
-    },
-    {
-        id: "Singing",
-        title: "Singing",
-        date: "March 15, 2025",
-        time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
-        image: "images/events/1.png",
+        image: "images/events/FashionShow.jpg",
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
@@ -235,3 +221,14 @@ document.addEventListener("DOMContentLoaded", () => {
         loadEventFromURL(); // Load event details on the event page
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menu = document.querySelector(".menu");
+
+    mobileMenu.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+    });
+});
+

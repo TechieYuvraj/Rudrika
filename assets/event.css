@@ -48,6 +48,114 @@ header p {
 }
 
 /* =======================
+   Responsive Navigation
+======================= */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        display: none;
+    }
+}
+
+/* Hide navigation buttons on mobile */
+@media screen and (max-width: 768px) {
+    .navigation1 {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background: #222;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .menu a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Animation for menu open */
+    .menu.active {
+        display: flex;
+    }
+
+    /* X animation */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+
+/* =======================
+   Navigation Bar
+======================= */
+@media (min-width: 768px) {
+    .navigation1 {
+        background: #333;
+        text-align: center;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+}
+
+/* =======================
    Navigation Bar
 ======================= */
 nav {

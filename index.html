@@ -19,11 +19,6 @@
 </head>
 <body class="bg-gray-900 text-white">
 
-    <!-- Preloader -->
-    <!-- <div id="preloader">
-        <div class="spinner"></div>
-    </div> -->
-
     <!-- Header -->
     <header class="text-center py-6 bg-gray-800">
         <h1 class="text-4xl font-bold">Rudrika Cultural Fest</h1>
@@ -31,7 +26,7 @@
     </header>
 
     <!-- Navigation -->
-    <nav class="navigation">
+    <nav class="navigation1">
         <div class="navigation-btn">
             <a href="#event" class="shrikhand-regular">Events</a>
             <a href="#coordinators" class="shrikhand-regular">Coordinators</a>
@@ -49,60 +44,28 @@
         </div>
     </nav>
 
-    <!-- Event Schedule
-    <section id="event" class="p-6">
-        <h2 class="text-3xl font-bold text-center mb-6">Events</h2>
-        <div class="event-container">
-            <div class="card">
-                <img src="images/events/BeatDrop.jpg" alt="Event">
-                <h3 class="text-xl font-bold">Beat-Drop (Dance)</h3>
-                <p>10 AM</p>
-                <button onclick="viewEvent('Beat-Drop (Dance)')">View Details</button>
-            </div>
-            <div class="card">
-                <img src="images/events/1.png" alt="Event">
-                <h3 class="text-xl font-bold">Singing</h3>
-                <p>12 PM</p>
-                <button onclick="viewEvent('Singing')">View Details</button>
-            </div>
-            <div class="card">
-                <img src="images/events/xFactor.jpg" alt="Event">
-                <h3 class="text-xl font-bold">X-Factor</h3>
-                <p>2 PM</p>
-                <button onclick="viewEvent('X-Factor')">View Details</button>
-            </div>
-            <div class="card">
-                <img src="images/events/1.png" alt="Event">
-                <h3 class="text-xl font-bold">Drama</h3>
-                <p>2 PM</p>
-            </div>
-            <div class="card">
-                <img src="images/events/BeatBox.jpg" alt="Event">
-                <h3 class="text-xl font-bold">Beat Boxing</h3>
-                <p>2 PM</p>
-            </div>
-            <div class="card">
-                <img src="images/events/DJwar.jpg" alt="Event">
-                <h3 class="text-xl font-bold">DJ War</h3>
-                <p>2 PM</p>
-            </div>
-            <div class="card">
-                <img src="images/events/1.png" alt="Event">
-                <h3 class="text-xl font-bold">Band</h3>
-                <p>2 PM</p>
-            </div>
-            <div class="card">
-                <img src="images/events/1.png" alt="Event">
-                <h3 class="text-xl font-bold">Case Investigation</h3>
-                <p>2 PM</p>
-            </div>
-            <div class="card">
-                <img src="images/events/1.png" alt="Event">
-                <h3 class="text-xl font-bold">Fashion Show</h3>
-                <p>2 PM</p>
-            </div>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </section> -->
+        <div class="navigation-logo">
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+        </div>
+        <div class="navigation-btn menu">
+            <a href="#event" class="shrikhand-regular">Events</a>
+            <a href="#coordinators" class="shrikhand-regular">Coordinators</a>
+            <a href="#volunteers" class="shrikhand-regular">Volunteers</a>
+            <a href="#gallery" class="shrikhand-regular">Gallery</a>
+            <a href="#sponsors" class="shrikhand-regular">Sponsors</a>
+            <a href="#contact" class="shrikhand-regular">Contact</a>
+        </div>
+    </nav>
+
 
      <!-- Events Section -->
      <section class="events-section">
@@ -110,17 +73,6 @@
         <div id="event-container" class="event-container">
             <!-- Events will be loaded dynamically here -->
         </div>
-    </section>
-
-    <!-- Registration Form -->
-    <section id="register" class="p-6 bg-gray-800">
-        <h2 class="text-3xl font-bold text-center mb-6">Register for the Fest</h2>
-        <form class="max-w-lg mx-auto">
-            <input type="text" placeholder="Full Name" class="form-input"><br>
-            <input type="email" placeholder="Email Address" class="form-input"><br>
-            <input type="text" placeholder="Phone Number" class="form-input"><br>
-            <button type="submit" class="btn">Register</button>
-        </form>
     </section>
 
     <!-- Event Rules -->
@@ -186,13 +138,25 @@
         </div>
     </section>
 
-    <!-- Sponsors -->
-    <section id="sponsors" class="p-6">
-        <h2 class="text-3xl font-bold text-center mb-6">Our Sponsors</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="card">Tech Innovators</div>
-            <div class="card">ABC Corporation</div>
-            <div class="card">XYZ Solutions</div>
+    <!-- Sponsor Section -->
+    <section id="volunteers">
+        <h2 class="text-3xl font-bold text-center mb-6">Sponsor</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/volunteers/1.png" alt="Sponsor">
+                <h3>Aditya Singh</h3>
+                <p>Meta</p>
+            </div>
+            <div class="team-card">
+                <img src="images/volunteers/2.png" alt="Sponsor">
+                <h3>Manish Gari</h3>
+                <p>Microsoft</p>
+            </div>
+            <div class="team-card">
+                <img src="images/volunteers/3.png" alt="Sponsor">
+                <h3>Lakshay Limba</h3>
+                <p>Google</p>
+            </div>
         </div>
     </section>
 
