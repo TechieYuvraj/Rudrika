@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudrika Fest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div class="spinner"></div>
+    </div> -->
+
+    <!-- Header -->
+    <header class="text-center py-6 bg-gray-800">
+        <h1 class="text-4xl font-bold">Rudrika Cultural Fest</h1>
+        <p class="text-lg">Experience the best cultural extravaganza!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="navigation-btn">
+            <a href="#event" class="shrikhand-regular">Events</a>
+            <a href="#coordinators" class="shrikhand-regular">Coordinators</a>
+            <a href="#volunteers" class="shrikhand-regular">Volunteers</a>
+        </div>
+        <div class="navigation-logo">
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+        </div>
+        <div class="navigation-btn">
+            <a href="#gallery" class="shrikhand-regular">Gallery</a>
+            <a href="#sponsors" class="shrikhand-regular">Sponsors</a>
+            <a href="#contact" class="shrikhand-regular">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Event Schedule
+    <section id="event" class="p-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Events</h2>
+        <div class="event-container">
+            <div class="card">
+                <img src="images/events/BeatDrop.jpg" alt="Event">
+                <h3 class="text-xl font-bold">Beat-Drop (Dance)</h3>
+                <p>10 AM</p>
+                <button onclick="viewEvent('Beat-Drop (Dance)')">View Details</button>
+            </div>
+            <div class="card">
+                <img src="images/events/1.png" alt="Event">
+                <h3 class="text-xl font-bold">Singing</h3>
+                <p>12 PM</p>
+                <button onclick="viewEvent('Singing')">View Details</button>
+            </div>
+            <div class="card">
+                <img src="images/events/xFactor.jpg" alt="Event">
+                <h3 class="text-xl font-bold">X-Factor</h3>
+                <p>2 PM</p>
+                <button onclick="viewEvent('X-Factor')">View Details</button>
+            </div>
+            <div class="card">
+                <img src="images/events/1.png" alt="Event">
+                <h3 class="text-xl font-bold">Drama</h3>
+                <p>2 PM</p>
+            </div>
+            <div class="card">
+                <img src="images/events/BeatBox.jpg" alt="Event">
+                <h3 class="text-xl font-bold">Beat Boxing</h3>
+                <p>2 PM</p>
+            </div>
+            <div class="card">
+                <img src="images/events/DJwar.jpg" alt="Event">
+                <h3 class="text-xl font-bold">DJ War</h3>
+                <p>2 PM</p>
+            </div>
+            <div class="card">
+                <img src="images/events/1.png" alt="Event">
+                <h3 class="text-xl font-bold">Band</h3>
+                <p>2 PM</p>
+            </div>
+            <div class="card">
+                <img src="images/events/1.png" alt="Event">
+                <h3 class="text-xl font-bold">Case Investigation</h3>
+                <p>2 PM</p>
+            </div>
+            <div class="card">
+                <img src="images/events/1.png" alt="Event">
+                <h3 class="text-xl font-bold">Fashion Show</h3>
+                <p>2 PM</p>
+            </div>
+        </div>
+    </section> -->
+
+     <!-- Events Section -->
+     <section class="events-section">
+        <h2 class="event-heading">Upcoming Events</h2>
+        <div id="event-container" class="event-container">
+            <!-- Events will be loaded dynamically here -->
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="p-6 bg-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-6">Register for the Fest</h2>
+        <form class="max-w-lg mx-auto">
+            <input type="text" placeholder="Full Name" class="form-input"><br>
+            <input type="email" placeholder="Email Address" class="form-input"><br>
+            <input type="text" placeholder="Phone Number" class="form-input"><br>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </section>
+
+    <!-- Event Rules -->
+    <section id="rules" class="p-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Event Rules</h2>
+        <ul class="list-disc list-inside text-center">
+            <li>Participants must arrive 30 minutes before their event.</li>
+            <li>Use of abusive language will lead to disqualification.</li>
+            <li>Judges' decision is final and binding.</li>
+        </ul>
+    </section>
+
+    <!-- Coordinators Section -->
+    <section id="coordinators">
+        <h2 class="text-3xl font-bold text-center mb-6">Coordinators</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/coordinators/1.png" alt="Coordinator">
+                <h3>Yuvraj Pratap Singh</h3>
+                <p>Event Coordinator</p>
+            </div>
+            <div class="team-card">
+                <img src="images/coordinators/2.png" alt="Coordinator">
+                <h3>Aamir Khan</h3>
+                <p>Logistics Coordinator</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteers Section -->
+    <section id="volunteers">
+        <h2 class="text-3xl font-bold text-center mb-6">Volunteers</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/volunteers/1.png" alt="Volunteer">
+                <h3>Aditya Singh</h3>
+                <p>Stage Manager</p>
+            </div>
+            <div class="team-card">
+                <img src="images/volunteers/2.png" alt="Volunteer">
+                <h3>Manish Gari</h3>
+                <p>Registration Desk</p>
+            </div>
+            <div class="team-card">
+                <img src="images/volunteers/3.png" alt="Volunteer">
+                <h3>Lakshay Limba</h3>
+                <p>Technical Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-container">
+        <h2 class="text-3xl font-bold mb-6 text-center">Gallery</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/glimpses/01.jpeg" alt="Gallery Image 1">
+                <img src="images/glimpses/02.png" alt="Gallery Image 2">
+                <img src="images/glimpses/03.png" alt="Gallery Image 3">
+                <img src="images/glimpses/04.jpeg" alt="Gallery Image 4">
+                <img src="images/glimpses/05.png" alt="Gallery Image 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="p-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Our Sponsors</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="card">Tech Innovators</div>
+            <div class="card">ABC Corporation</div>
+            <div class="card">XYZ Solutions</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-6 bg-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+        <p class="text-center">Email: contact@rudrikafest.com</p>
+        <p class="text-center">Phone: +91 9876543210</p>
+    </section>
+
+     <!-- Footer -->
+     <footer>
+        <p>&copy; 2025 Rudrika Cultural Fest. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script src="assets/event.js"></script>
+</body>
+</html>

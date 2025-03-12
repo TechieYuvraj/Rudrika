@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details | Rudrika Cultural Fest</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/event.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <script defer src="event.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header>
+        <h1>Event Details</h1>
+        <a href="index.html" class="back-button">← Back to Events</a>
+        <p class="text-lg">Experience the best cultural extravaganza!</p>
+    </header>
+    <!-- <header class="text-center py-6 bg-gray-800 text-white">
+        <h1 class="text-4xl font-bold">Rudrika Cultural Fest</h1>
+        
+    </header> -->
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center bg-gray-900 text-white p-4">
+        <div class="flex space-x-4">
+            <a href="index.html#event" class="hover:underline">Events</a>
+            <a href="index.html#coordinators" class="hover:underline">Coordinators</a>
+            <a href="index.html#volunteers" class="hover:underline">Volunteers</a>
+        </div>
+        <div>
+            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="h-10 inline">
+        </div>
+        <div class="flex space-x-4">
+            <a href="index.html#gallery" class="hover:underline">Gallery</a>
+            <a href="index.html#sponsors" class="hover:underline">Sponsors</a>
+            <a href="index.html#contact" class="hover:underline">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Event Title -->
+    <main class="event-details-container">
+        <div class="event-image">
+            <img id="event-image" src="" alt="Event Image">
+        </div>
+        <div class="event-info">
+            <h2 id="event-title"></h2>
+            <p><strong>Date:</strong> <span id="event-date"></span></p>
+            <p><strong>Time:</strong> <span id="event-time"></span></p>
+            <p><strong>Venue:</strong> <span id="event-venue"></span></p>
+            <p id="event-description"></p>
+            <a id="rule-book" href="#" class="rulebook-link" target="_blank">Download Rulebook</a>
+        </div>
+    </main>
+
+    <!-- Event Coordinators -->
+    <section class="coordinator-section">
+        <h3>Event Coordinators</h3>
+        <div id="coordinator-section"></div>
+    </section>
+
+    <script src="assets/script.js"></script>
+    <script src="assets/event.js"></script>
+
+</body>
+</html>
