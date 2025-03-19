@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <title>Rudrika Fest</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -17,18 +18,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
-<body class="bg-gray-900 text-white" background="images\logo\BgImg1.jpg">
+<body>
+
+    <!-- partial:index.partial.html -->
+    <pointer-particles></pointer-particles>
 
     <!-- Header -->
     <header>
-        <h1 class="text-4xl font-bold">Rudrika Cultural Fest</h1>
-        <p class="text-lg">Experience the best cultural extravaganza!</p>
+        <h1 class="harryp">Harry Porter</h1>
+        <img src="images/theme/harry1.png">
     </header>
 
     <div class="floating-candles">
-        <div class="candle" style="left: 20%; animation-duration: 7s;"></div>
-        <div class="candle" style="left: 50%; animation-duration: 5s;"></div>
-        <div class="candle" style="left: 80%; animation-duration: 6s;"></div>
+        <div class="candle" style="left: 10%; animation-duration: 7s;"></div>
+        <div class="candle" style="left: 20%; animation-duration: 8s;"></div>
+        <div class="candle" style="left: 30%; animation-duration: 9s;"></div>
+        <div class="candle" style="left: 40%; animation-duration: 7s;"></div>
+        <div class="candle" style="left: 50%; animation-duration: 8s;"></div>
+        <div class="candle" style="left: 60%; animation-duration: 9s;"></div>
+        <div class="candle" style="left: 70%; animation-duration: 7s;"></div>
+        <div class="candle" style="left: 80%; animation-duration: 8s;"></div>
+        <div class="candle" style="left: 90%; animation-duration: 9s;"></div>
+        <div class="candle" style="left: 100%; animation-duration: 7s;"></div>
     </div>
 
     <!-- Navigation -->
@@ -75,7 +86,7 @@
 
      <!-- Events Section -->
      <section class="events-section">
-        <h2 class="event-heading">Upcoming Events</h2>
+        <h2 class="event-heading">Rudrika Cultural Fest</h2>
         <div id="event-container" class="event-container">
             <!-- Events will be loaded dynamically here -->
         </div>
@@ -167,7 +178,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section class="contact-info">
         <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
         <p class="text-center">Email: contact@rudrikafest.com</p>
         <p class="text-center">Phone: +91 9876543210</p>
@@ -180,5 +191,6 @@
 
     <script src="assets/script.js"></script>
     <script src="assets/event.js"></script>
+    <script src="assets/pointer.js"></script>
 </body>
 </html>

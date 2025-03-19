@@ -25,13 +25,14 @@
 
     <script defer src="event.js"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body>
+    <!-- partial:index.partial.html -->
+    <pointer-particles></pointer-particles>
 
     <!-- Header -->
     <header>
-        <h1>Event Details</h1>
-        <a href="index.html" class="back-button">← Back to Events</a>
-        <p class="text-lg">Experience the best cultural extravaganza!</p>
+        <h1 class="harryp">Harry Porter</h1>
+        <img src="images/theme/harry1.png">
     </header>
 
     <!-- Navigation -->
@@ -42,9 +43,9 @@
             <a href="#volunteers" class="shrikhand-regular">Volunteers</a>
         </div>
         <div class="navigation-logo">
+            <img src="images/logo/GIT Logo Stroke.png" alt="Rudrika Fest" class="logo">
             <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
-            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
-            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+            <img src="images/logo/Rudrika Logo Png.png" alt="Rudrika Fest" class="logo">
         </div>
         <div class="navigation-btn">
             <a href="#gallery" class="shrikhand-regular">Gallery</a>
@@ -61,9 +62,9 @@
             <div class="bar"></div>
         </div>
         <div class="navigation-logo">
+            <img src="images/logo/GIT Logo Stroke.png" alt="Rudrika Fest" class="logo">
             <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
-            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
-            <img src="images/logo/1.jpeg" alt="Rudrika Fest" class="logo">
+            <img src="images/logo/Rudrika Logo Png.png" alt="Rudrika Fest" class="logo">
         </div>
         <div class="navigation-btn menu">
             <a href="#event" class="shrikhand-regular">Events</a>
@@ -90,14 +91,26 @@
         </div>
     </main>
 
-    <!-- Event Coordinators -->
-    <section class="coordinator-section">
-        <h3>Event Coordinators</h3>
-        <div id="coordinator-section"></div>
+    <!-- Coordinators Section -->
+    <section id="coordinators">
+        <h2 class="text-3xl font-bold text-center mb-6">Coordinators</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/coordinators/1.png" alt="Coordinator">
+                <h3>Yuvraj Pratap Singh</h3>
+                <p>Event Coordinator</p>
+            </div>
+            <div class="team-card">
+                <img src="images/coordinators/2.png" alt="Coordinator">
+                <h3>Aamir Khan</h3>
+                <p>Logistics Coordinator</p>
+            </div>
+        </div>
     </section>
 
     <script src="assets/script.js"></script>
     <script src="assets/event.js"></script>
+    <script src="assets/pointer.js"></script>
 
 </body>
 </html>

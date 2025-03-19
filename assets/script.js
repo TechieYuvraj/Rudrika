@@ -60,7 +60,7 @@ const events = [
     },
     {
         id: "BeatBoxing",
-        title: "BeatBoxing",
+        title: "Beat Boxing",
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
@@ -74,7 +74,7 @@ const events = [
     },
     {
         id: "DJwar",
-        title: "DJwar",
+        title: "DJ war",
         date: "March 15, 2025",
         time: "10:00 AM - 05:00 PM",
         venue: "Main Auditorium",
