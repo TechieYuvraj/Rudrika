@@ -1,4 +1,5 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lavishly+Yours&family=Shrikhand&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,13 @@
 }
 
 body {
-    background-image: url(../images/theme/parchment2.jpg);
+    /* background-color: #0c3e54; */
+    background-image: url(../images/theme/bg3.jpg);
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevent repetition */
     background-attachment: fixed; /* Keep background fixed on scroll */
     background-position: center; /* Center the image */
-    color: #010101;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -32,11 +34,12 @@ pointer-particles {
 header {
     text-align: center;
     display: flex;
+    
 }
 
 header h1 {
     font-weight: bold;
-    color: #f39c12;
+    color: #c0c0c0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,8 +52,7 @@ header p {
 header img {
     height: 150px;
     width: 150px;
-    margin-left: auto;
-    margin-right: 90px;
+    /* margin-right: 90px; */
     margin-top: 10px;
 }
 
@@ -65,7 +67,7 @@ header img {
     font-size: 100px;
     font-family: 'MagicSchoolOne', serif;
     letter-spacing: 2px; /* Adds a magical touch */
-    text-shadow: 4px 4px 6px rgba(232, 227, 204, 0.5);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 /* =======================
    Responsive Navigation
@@ -199,7 +201,8 @@ header img {
 }
 
 nav {
-    background: url('/images/theme/parchment-bg.jpg') no-repeat center center/cover;
+    /* background: url('/images/theme/parchment-bg.jpg') no-repeat center center/cover; */
+    background-color: #215f7c;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -209,7 +212,9 @@ nav {
 
 nav a {
     font-family: "Harry P", serif;
-    color: #5a3716;
+    /* color: #5a3716; */
+    color: white;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     font-size: 1.5rem;
     padding: 10px;
@@ -253,7 +258,8 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #f39c12;
+    color: #ffffff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 1.5);
 }
 
 .event-container {
@@ -277,7 +283,8 @@ h2 {
 }
 
 .card {
-    background: url('/images/theme/parchment-bg.jpg') no-repeat center center/cover;
+    /* background: url('/images/theme/parchment-bg.jpg') no-repeat center center/cover; */
+    background-color: #215f7c;
     padding-bottom: 20px;
     border-radius: 10px;
     text-align: center;
@@ -287,7 +294,7 @@ h2 {
 }
 
 .card:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+    box-shadow: 0 0 20px #dcdcdc;
     transform: perspective(1000px) rotateY(15deg) translateY(-5px);
 }
 
@@ -305,7 +312,7 @@ ul {
 ul li {
     font-size: 20px;
     padding: 5px 0;
-    color: #000000;
+    /* color: #fbfbfb; */
 }
 
 .card p {
@@ -320,17 +327,18 @@ ul li {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(45deg, #ff004f, #ff9900);
+    background-color: #1c3b4e;
+    /* background: linear-gradient(45deg, #ff004f, #ff9900); */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
     transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.5);
+    /* box-shadow: 0 4px 15px rgba(255, 0, 79, 0.5); */
 }
 
 .card button:hover {
-    box-shadow: 0 6px 25px rgba(255, 0, 79, 0.8);
+    box-shadow: 0px 0px 15px #dcdcdc;
 }
 
 /* Sparks Container */
@@ -438,7 +446,7 @@ ul li {
 .contact-info p {
     font-size: 1.2rem;
     opacity: 0.8;
-    color: #000;
+    /* color: #000; */
 }
 .contact-info a {
     color: #f39c12;
@@ -509,6 +517,7 @@ ul li {
     font-size: 50px;
     margin-bottom: 20px;
     font-weight: 600;
+    font-family: "Lavishly Yours", cursive;
 }
 
 /* ============================= */
@@ -517,7 +526,7 @@ ul li {
 footer {
     text-align: center;
     padding: 15px;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
 }
 
 
