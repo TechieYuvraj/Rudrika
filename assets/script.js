@@ -232,3 +232,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function createSnowflake() {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake"); // No inner HTML needed
+    document.body.appendChild(snowflake);
+
+    // Random properties
+    let size = Math.random() * 20 + 10 + "px"; // Vary size
+    let left = Math.random() * window.innerWidth + "px";
+    let duration = Math.random() * 5 + 3 + "s"; // Random fall speed
+    let rotation = Math.random() * 360 + "deg"; // Random rotation start
+
+    // Apply styles
+    snowflake.style.left = left;
+    snowflake.style.width = size;
+    snowflake.style.height = size;
+    snowflake.style.animationDuration = duration;
+
+    // Remove snowflake after animation ends
+    setTimeout(() => {
+        snowflake.remove();
+    }, parseFloat(duration) * 1000);
+}
+
+// Create snowflakes at intervals
+setInterval(createSnowflake, 200);

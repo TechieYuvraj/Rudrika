@@ -69,6 +69,32 @@ header img {
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
+
+.snowflake {
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/theme/snowflake1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite, rotate 6s linear infinite;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)); /* Glow Effect */
+    z-index: -1;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
 /* =======================
    Responsive Navigation
 ======================= */
@@ -156,15 +182,6 @@ header img {
     .menu-toggle.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
-}
-
-.floating-candles {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
 }
 
 /* =======================
