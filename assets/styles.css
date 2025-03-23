@@ -4,13 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'MagicSchoolOne', serif;
     scroll-behavior: smooth;
 }
 
 body {
-    /* background-color: #0c3e54; */
     background-image: url(../images/theme/bg3.jpg);
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -52,7 +50,6 @@ header p {
 header img {
     height: 150px;
     width: 150px;
-    /* margin-right: 90px; */
     margin-top: 10px;
 }
 
@@ -203,7 +200,9 @@ header img {
 }
 
 nav {
-    /* background: url('/images/theme/parchment-bg.jpg') no-repeat center center/cover; */
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     background-color: #215f7c;
     padding: 15px;
     display: flex;
@@ -213,8 +212,9 @@ nav {
 }
 
 nav a {
-    font-family: "Harry P", serif;
-    /* color: #5a3716; */
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: white;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -242,19 +242,15 @@ nav a:hover {
     align-items: center;
 }
 
-.shrikhand-regular {
-    font-family: "Shrikhand", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-
 /* =======================
    Section Styles
 ======================= */
 section {
     padding: 60px 10%;
     text-align: center;
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 h2 {
     font-size: 2.5rem;
@@ -285,13 +281,14 @@ h2 {
 }
 
 .card {
-    /* background: url('/images/theme/parchment-bg.jpg') no-repeat center center/cover; */
     background-color: #215f7c;
     padding-bottom: 20px;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    font-family: "Harry P", serif;
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -303,7 +300,9 @@ h2 {
 .card h3 {
     margin: 15px 0;
     font-size: 1.4rem;
-    font-family: "Harry P", serif;
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
 }
 
@@ -314,12 +313,14 @@ ul {
 ul li {
     font-size: 20px;
     padding: 5px 0;
-    /* color: #fbfbfb; */
+    
 }
 
 .card p {
     font-size: 1rem;
-    font-family: "Harry P", serif;
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
 }
 
@@ -519,7 +520,9 @@ ul li {
     font-size: 50px;
     margin-bottom: 20px;
     font-weight: 600;
-    font-family: "Lavishly Yours", cursive;
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* ============================= */
@@ -528,7 +531,9 @@ ul li {
 footer {
     text-align: center;
     padding: 15px;
-    /* color: rgb(0, 0, 0); */
+    font-family: 'MagicSchoolOne', serif;
+    letter-spacing: 2px; /* Adds a magical touch */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 
