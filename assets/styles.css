@@ -16,6 +16,7 @@ body {
     background-position: center; /* Center the image */
     color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -68,7 +69,7 @@ header img {
 }
 
 .snowflake {
-    position: absolute;
+    position: fixed;
     top: -20px;
     width: 30px;
     height: 30px;
@@ -225,8 +226,8 @@ nav a {
 }
 
 nav a:hover {
-    color: gold;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    color: #E6ECE9;
+    text-shadow: 1px 1px 20px #ffffff;
 }
 
 .navigation-logo img {
@@ -331,7 +332,6 @@ ul li {
     font-weight: bold;
     color: white;
     background-color: #1c3b4e;
-    /* background: linear-gradient(45deg, #ff004f, #ff9900); */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -420,7 +420,7 @@ ul li {
 .slides {
     display: flex;
     width: 100%;
-    animation: slide 12s infinite;
+    animation: slide 32s infinite;
 }
 
 .slides img {
@@ -432,9 +432,21 @@ ul li {
 /* Keyframes for sliding effect */
 @keyframes slide {
     0% { transform: translateX(0%); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
+    6% { transform: translateX(-100%); }
+    12% { transform: translateX(-200%); }
+    18% { transform: translateX(-300%); }
+    24% { transform: translateX(-400%); }
+    30% { transform: translateX(-500%); }
+    36% { transform: translateX(-600%); }
+    42% { transform: translateX(-700%); }
+    48% { transform: translateX(-800%); }
+    54% { transform: translateX(-900%); }
+    60% { transform: translateX(-1000%); }
+    66% { transform: translateX(-1100%); }
+    72% { transform: translateX(-1200%); }
+    78% { transform: translateX(-1300%); }
+    82% { transform: translateX(-1400%); }
+    86% { transform: translateX(-1500%); }
     100% { transform: translateX(0%); }
 }
 
@@ -475,7 +487,7 @@ ul li {
 }
 
 .team-card {
-    background: #1a202c;
+    background-color: #215f7c;
     padding: 20px;
     border-radius: 10px;
     min-width: 250px;
