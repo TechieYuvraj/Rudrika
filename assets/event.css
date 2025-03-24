@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lavishly+Yours&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,200;0,600;0,700;1,200;1,600;1,700&display=swap');
 
 /* General Styles */
 * {
@@ -6,7 +9,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: #ffffff;
-    font-family: 'MagicSchoolOne';
+    /* font-family: 'MagicSchoolOne'; */
 
 }
 
@@ -21,7 +24,7 @@ body {
 }
 
 @font-face {
-    font-family: 'MagicSchoolOne';
+    font-family: "Pacifico", cursive;
     src: url('../assets/fonts/MagicSchoolOne.ttf') format('truetype'); /* Adjust path if needed */
 }
 
@@ -38,10 +41,37 @@ header {
 }
 
 header h1 {
-    font-weight: bold;
-    color: #c0c0c0;
-    margin-left: auto;
+    /* font-weight: bold; */
+    font-family: "Crimson Text", serif;
+    display: flex;
+    padding-top: 15px;
+    color: #cbc9c9;
+    margin-left: 50px;
     margin-right: auto;
+    text-shadow: rgba(255, 255, 255, 0.5);
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px; /* Adds a magical touch */
+    /* text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 header p {
@@ -53,20 +83,6 @@ header img {
     height: 150px;
     width: 150px;
     margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    header img {
-        display: none;
-    }
-    
-}
-
-.harryp {
-    font-size: 100px;
-    font-family: 'MagicSchoolOne', serif;
-    letter-spacing: 2px; /* Adds a magical touch */
-    text-shadow: 4px 4px 6px rgba(232, 227, 204, 0.5);
 }
 
 .snowflake {
@@ -81,7 +97,7 @@ header img {
     user-select: none;
     pointer-events: none;
     animation: fall linear infinite, rotate 6s linear infinite;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)); /* Glow Effect */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
     z-index: -1;
 }
 
@@ -136,6 +152,8 @@ header img {
         position: sticky;
         top: 0;
         z-index: 50;
+        background-color: #215f7c;
+        width: 100%;
     }
 
     .menu {
@@ -144,7 +162,7 @@ header img {
         width: 100%;
         position: absolute;
         top: 60px;
-        background: #222;
+        background: #287ca3;
         text-align: center;
         padding: 10px 0;
         z-index: 99;
@@ -154,14 +172,37 @@ header img {
         display: block;
         padding: 15px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
     }
 
     .menu a:last-child {
         border-bottom: none;
     }
 
+    .menu a:hover {
+        background-color: #1c3b4e;
+        color: #E6ECE9;
+    }
+
     .menu-toggle {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 100;
+    }
+
+    .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: 0.3s;
     }
 
     /* Animation for menu open */
@@ -192,7 +233,6 @@ header img {
         padding: 15px 0;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
         position: sticky;
         top: 0;
@@ -201,26 +241,27 @@ header img {
     }
 }
 
-nav {
-    font-family: 'MagicSchoolOne', serif;
+nav { /* Phone View */
+    font-family: "Pacifico", cursive;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     background-color: #215f7c;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-nav a {
-    font-family: 'MagicSchoolOne', serif;
-    letter-spacing: 2px; /* Adds a magical touch */
+nav a { /* Desktop View */
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: white;
+    gap: 20px;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 40px;
     padding: 10px;
     transition: 0.3s ease-in-out;
     position: relative;
@@ -231,9 +272,16 @@ nav a:hover {
     text-shadow: 1px 1px 20px #ffffff;
 }
 
-.navigation-logo img {
-    width: 70px;
-    height: 70px;
+.logo2{
+    width:  220px;
+    height: 80%;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.logo1{
+    width:  180px;
+    height: 100px;
     border-radius: 50%;
     margin: 0 10px;
 }
