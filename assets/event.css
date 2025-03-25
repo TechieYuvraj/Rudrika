@@ -390,6 +390,15 @@ nav a:hover {
 /* =======================
    Coordinators & Volunteers
 ======================= */
+#coordinators h2 {
+    font-size: 45px;
+    font-family: "Pacifico", cursive;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
 .team-container {
     padding: 20px;
     text-align: center;
@@ -403,6 +412,7 @@ nav a:hover {
 
 .team-card {
     background-color: #215f7c;
+    font-family: "Pacifico", cursive;
     padding: 20px;
     border-radius: 10px;
     min-width: 250px;
