@@ -36,6 +36,7 @@ pointer-particles {
 header {
     text-align: center;
     display: flex;
+    min-width: 460px;
     
 }
 
@@ -131,14 +132,14 @@ header img {
     transition: 0.3s;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     .navigation {
         display: none;
     }
 }
 
 /* Hide navigation buttons on mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .navigation1 {
         display: none;
     }
@@ -153,6 +154,7 @@ header img {
         z-index: 50;
         background-color: #215f7c;
         width: 100%;
+        min-width: 460px;
     }
 
     .menu {
@@ -196,7 +198,7 @@ header img {
     }
 
     .bar {
-        width: 30px;
+        width: 50px;
         height: 4px;
         background-color: white;
         margin: 5px 0;
@@ -211,7 +213,7 @@ header img {
 
     /* X animation */
     .menu-toggle.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(10px, -3px);
     }
 
     .menu-toggle.active .bar:nth-child(2) {
@@ -219,14 +221,14 @@ header img {
     }
 
     .menu-toggle.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(22px, -10px);
     }
 }
 
 /* =======================
    Navigation Bar
 ======================= */
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     .navigation1 {
         text-align: center;
         padding: 15px 0;
@@ -277,6 +279,12 @@ nav a:hover {
     margin: 0 10px;
 }
 
+.logo1 {
+    width:  170px;
+    height: 60%;
+    margin: 0 10px;
+}
+
 .navigation-logo {
     display: flex;
     flex-direction: row;
@@ -292,9 +300,11 @@ section {
     font-family: "Pacifico", cursive;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    min-width: 460px;
 }
 h2 {
     font-size: 2.5rem;
+    font-family: "Pacifico", cursive;
     margin-bottom: 20px;
     font-weight: bold;
     color: #ffffff;
@@ -363,6 +373,7 @@ ul li {
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .card button {
@@ -587,6 +598,7 @@ footer {
     font-family: "Pacifico", cursive;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    min-width: 460px;
 }
 
 
