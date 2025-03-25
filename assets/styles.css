@@ -36,53 +36,39 @@ pointer-particles {
 header {
     text-align: center;
     display: flex;
-    min-width: 460px;
-    
-}
-
-header h1 {
-    /* font-weight: bold; */
-    font-family: "Crimson Text", serif;
-    display: flex;
-    padding-top: 15px;
-    color: #cbc9c9;
-    margin-left: 50px;
-    margin-right: auto;
-    text-shadow: rgba(255, 255, 255, 0.5);
-    font-size: 60px;
-    align-items: center;
     justify-content: center;
-    letter-spacing: 2px; /* Adds a magical touch */
-    /* text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    min-width: 400px;
+
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
-    }
+.H_logo1 {
+    height: 70px;
+    width: 200px;
+    margin: 10px;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 30px;
-        padding-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+.H_logo2 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
 }
 
-header p {
-    font-size: 1.2rem;
-    opacity: 0.8;
+.H_logo3 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
 }
 
-header img {
-    height: 150px;
-    width: 150px;
-    margin-top: 10px;
+.H_logo4 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
 }
 
 .snowflake {
