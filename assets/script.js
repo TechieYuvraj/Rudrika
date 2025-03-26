@@ -299,3 +299,79 @@ document.addEventListener("DOMContentLoaded", function () {
     // Automatically show the popup on page load
     popupOverlay.style.display = "flex";
 });
+
+// Hide preloader after the page loads
+document.addEventListener("DOMContentLoaded", function () {
+    let letters = document.querySelectorAll(".letter");
+
+    // Animate each letter with a delay
+    letters.forEach((letter, index) => {
+        setTimeout(() => {
+            letter.style.animationDelay = `${index * 0.2}s`;
+            letter.classList.add("animate");
+        }, index * 300);
+    });
+
+    // Hide preloader after animation completes
+    setTimeout(() => {
+        document.getElementById("preloader").classList.add("fade-out");
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("content").style.display = "block"; // Show main content
+        }, 1000);
+    }, 3900);
+});
+
+// Function to get the event ID from the URL (?event= format)
+function getEventIdFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get("event"); // Extracts the event ID correctly
+}
+
+// Function to display coordinators for the selected event
+function displayCoordinators(eventId) {
+    const coordinatorsList = document.getElementById("coordinators-list");
+    coordinatorsList.innerHTML = ""; // Clear previous coordinators
+
+    // Find the event matching the eventId
+    const selectedEvent = events.find(event => event.id === eventId);
+    if (!selectedEvent) {
+        coordinatorsList.innerHTML = "<p>No coordinators found for this event.</p>";
+        return;
+    }
+
+    // Loop through the coordinators of the selected event and add them dynamically
+    selectedEvent.coordinators.forEach((coordinator) => {
+        const coordinatorCard = document.createElement("div");
+        coordinatorCard.classList.add("team-card");
+
+        // Name
+        const nameElement = document.createElement("h3");
+        nameElement.textContent = coordinator.name;
+
+        // Contact Number
+        const contactElement = document.createElement("p");
+        contactElement.textContent = `📞 ${coordinator.contact}`;
+
+        // WhatsApp Button
+        const whatsappLink = document.createElement("a");
+        whatsappLink.href = `https://wa.me/${coordinator.contact.replace(/\s+/g, '')}`;
+        whatsappLink.target = "_blank";
+        whatsappLink.classList.add("whatsapp-button");
+        whatsappLink.innerHTML = "Chat on WhatsApp 💬";
+
+        // Append elements
+        coordinatorCard.appendChild(nameElement);
+        coordinatorCard.appendChild(contactElement);
+        coordinatorCard.appendChild(whatsappLink);
+        coordinatorsList.appendChild(coordinatorCard);
+    });
+}
+
+// Execute when page loads
+document.addEventListener("DOMContentLoaded", () => {
+    const eventId = getEventIdFromURL(); // Get event ID from URL
+    if (eventId) {
+        displayCoordinators(eventId); // Display coordinators for that event
+    }
+});
