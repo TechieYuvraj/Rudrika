@@ -103,32 +103,31 @@ header {
     gap: 20px;
     margin: auto;
     min-width: 400px;
+}
 
+@media (max-width: 630px) {
+    header {
+        min-width: 460px;
+    }
+    .H_logo1 {
+        min-width: 130px;
+    }
+    .H_logo2, .H_logo3, .H_logo4 {
+        min-width: 60px;
+    }
 }
 
 .H_logo1 {
-    height: 70px;
-    width: 180px;
+    height: auto;
+    width: 100%;
+    max-width: 180px;
     margin: 10px;
 }
 
-.H_logo2 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.H_logo3 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.H_logo4 {
-    height: 100px;
-    width: 100px;
+.H_logo2, .H_logo3, .H_logo4 {
+    height: auto;
+    width: 100%;
+    max-width: 100px;
     margin: 10px;
     border-radius: 50%;
 }
@@ -496,6 +495,13 @@ ul li {
         opacity: 0;
         transform: translate(20px, -40px) scale(1.5);
     }
+}
+
+.celeb {
+    width: 65%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* =======================
