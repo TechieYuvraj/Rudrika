@@ -30,8 +30,11 @@ body {
 }
 
 @font-face {
-    font-family: "Pacifico", cursive;
-    src: url('../assets/fonts/MagicSchoolOne.ttf') format('truetype'); /* Adjust path if needed */
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6K6MmBp0u-.woff2') format('woff2');
 }
 
 pointer-particles {
@@ -374,6 +377,8 @@ h2 {
     gap: 50px;
     justify-content: center;
     align-items: center;
+    content-visibility: auto;
+    min-height: 500px;
 
 }
 
@@ -517,6 +522,7 @@ ul li {
 .gallery-container {
     padding: 40px 0;
     text-align: center;
+    min-height: 600px;
 }
 
 .slider {
