@@ -13,7 +13,7 @@ const events = [
         description: "Beat-Drop is a dazzling fashion show that showcases talent and style.",
         coordinators: [
             { name: "Harshvardhan Singh", contact: "+91 81122 80766" },
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" }
+            { name: "Janvi Patel", contact: "+91 9587686203" }
         ]
     },
     {
@@ -26,8 +26,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Ashutosh Bissa", contact: "+91 8949276044" },
+            { name: "Aamir Khan", contact: "+91 8299328515" }
         ]
     },
     {
@@ -40,8 +40,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Devine Alphonso", contact: "+91 6362563196" },
+            { name: "Rudransh Upadhyay", contact: "+91 9521121626" }
         ]
     },
     {
@@ -54,8 +54,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Aryan Srivastav", contact: "+91 7091429578" },
+            { name: "Vinay Ramani", contact: "+91 8058278284" }
         ]
     },
     {
@@ -68,8 +68,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Arya Sharma", contact: "+91 8118848846" },
+            { name: "Mayank Chandel", contact: "+91 8690316625" }
         ]
     },
     {
@@ -82,8 +82,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Aditya Kumawat", contact: "+91 8005563032" },
+            { name: "Aakanksha Sehgal", contact: "+91 9257745337" }
         ]
     },
     {
@@ -96,8 +96,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Ketan Suthar", contact: "+91 9819678847" },
+            { name: "Rahul Khanna", contact: "+91 8209686398" }
         ]
     },
     {
@@ -110,8 +110,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Akanksha Rathore", contact: "+91 8764072476" },
+            { name: "Tanshi Arora", contact: "+91 6376204248" }
         ]
     },
     {
@@ -124,8 +124,8 @@ const events = [
         ruleBook: "files/techfest-rules.pdf",
         description: "Tech Fest is a showcase of innovation, technology, and competition.",
         coordinators: [
-            { name: "yuvraj Pratap Singh", contact: "+91 739826246" },
-            { name: "Bob Williams", contact: "+91 8877665544" }
+            { name: "Parul Sharma", contact: "+91 9257142145" },
+            { name: "Harshal Roy", contact: "+91 7742797417" }
         ]
     }
 ];
@@ -257,3 +257,45 @@ function createSnowflake() {
 
 // Create snowflakes at intervals
 setInterval(createSnowflake, 200);
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Create the popup overlay
+    let popupOverlay = document.createElement("div");
+    popupOverlay.id = "popupOverlay";
+
+    // Create the popup container
+    let popupContainer = document.createElement("div");
+    popupContainer.id = "popupContainer";
+
+    // Create the close button
+    let closeButton = document.createElement("span");
+    closeButton.id = "closePopup";
+    closeButton.innerHTML = "&times;"; // 'X' symbol
+
+    // Create the image element
+    let popupImage = document.createElement("img");
+    popupImage.id = "popupImage";
+    popupImage.src = "images/events/CelebNight.png"; // Replace with actual image path
+    popupImage.alt = "Celebrity Night Surprise";
+
+    // Append elements
+    popupContainer.appendChild(closeButton);
+    popupContainer.appendChild(popupImage);
+    popupOverlay.appendChild(popupContainer);
+    document.body.appendChild(popupOverlay);
+
+    // Close popup on button click
+    closeButton.addEventListener("click", function () {
+        popupOverlay.style.display = "none";
+    });
+
+    // Close popup when clicking outside the container
+    popupOverlay.addEventListener("click", function (event) {
+        if (event.target === popupOverlay) {
+            popupOverlay.style.display = "none";
+        }
+    });
+
+    // Automatically show the popup on page load
+    popupOverlay.style.display = "flex";
+});
