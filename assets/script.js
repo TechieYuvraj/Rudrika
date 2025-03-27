@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("preloader").style.display = "none";
             document.getElementById("content").style.display = "block"; // Show main content
         }, 1000);
-    }, 3900);
+    }, 4500);
 });
 
 // Function to get the event ID from the URL (?event= format)
