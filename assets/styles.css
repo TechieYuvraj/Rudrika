@@ -1,13 +1,12 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lavishly+Yours&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,200;0,600;0,700;1,200;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Moon+Dance&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Varela+Round&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Pacifico", cursive; */
     scroll-behavior: smooth;
 }
 
@@ -30,7 +29,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Pacifico';
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -384,7 +383,7 @@ header {
 }
 
 nav { /* Phone View */
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     background-color: #215f7c;
@@ -396,7 +395,7 @@ nav { /* Phone View */
 }
 
 nav a { /* Desktop View */
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 3px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: white;
@@ -438,14 +437,14 @@ nav a:hover {
 section {
     padding: 40px 10%;
     text-align: center;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     min-width: 460px;
 }
 h2 {
     font-size: 2.5rem;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     margin-bottom: 20px;
     font-weight: bold;
     color: #ffffff;
@@ -480,7 +479,7 @@ h2 {
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -494,7 +493,7 @@ h2 {
 .card h3 {
     margin: 15px 0;
     font-size: 1.4rem;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -512,7 +511,7 @@ ul li {
 
 .card p {
     font-size: 1rem;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -741,7 +740,7 @@ ul li {
     font-size: 50px;
     margin-bottom: 20px;
     font-weight: 600;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -753,7 +752,7 @@ footer {
     background-color: #215f7c; ;
     text-align: center;
     padding-bottom: 15px;
-    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     min-width: 460px;
