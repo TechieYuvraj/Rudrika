@@ -3,129 +3,129 @@
 // =============================
 const events = [
     {
-        id: "beat-drop",
-        title: "Beat-Drop",
-        date: "February 19, 2025",
-        time: "08:00 PM - 10:00 PM",
-        venue: "OAT",
-        image: "images/events/BeatDrop.jpg",
-        ruleBook: "files/rawaz-rules.pdf",
-        description: "Beat-Drop is a dazzling fashion show that showcases talent and style.",
-        coordinators: [
-            { name: "Harshvardhan Singh", contact: "+91 81122 80766" },
-            { name: "Janvi Patel", contact: "+91 9587686203" }
-        ]
-    },
-    {
         id: "Singing",
-        title: "Singing",
-        date: "March 15, 2025",
+        title: "Euphonic Echoes",
+        date: "April 17, 2025",
         time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
+        venue: "Yet to be decided",
         image: "images/events/Singing.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
+        ruleBook: "https://drive.google.com/file/d/1qEsabFU5xQbT3HY8BfXWp_RNy_4NWP01/view?usp=sharing",
+        description: "Get ready to be mesmerized at Euphonic Echoes, where voices take center stage and melodies fill the air! This unforgettable event will celebrate the power of music, with captivating performances, stunning harmonies, and raw talent that resonate with every note.",
         coordinators: [
             { name: "Ashutosh Bissa", contact: "+91 8949276044" },
             { name: "Aamir Khan", contact: "+91 8299328515" }
         ]
     },
     {
-        id: "xFactor",
-        title: "xFactor",
-        date: "March 15, 2025",
+        id: "Fashion Show",
+        title: "Majestic Threads",
+        date: "April 17, 2025",
         time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
-        image: "images/events/xFactor.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
+        venue: "Yet to be decided",
+        image: "images/events/FashionShow.jpg",
+        ruleBook: "https://drive.google.com/file/d/11LOdHHA6_kr8Oo09Gk52OEMz5ehCaeZL/view?usp=sharing",
+        description: "Get ready to be captivated at our upcoming fashion show, where creativity meets runway! It is an unforgettable evening that will be celebrating bold designs, innovative styles, and the unique flairs. This is more than just a fashion show-it's a vibrant showcase of self-expression, diversity and fusion of fashion.",
         coordinators: [
-            { name: "Devine Alphonso", contact: "+91 6362563196" },
-            { name: "Rudransh Upadhyay", contact: "+91 9521121626" }
+            { name: "Parul Sharma", contact: "+91 9257142145" },
+            { name: "Harshal Roy", contact: "+91 7742797417" }
+        ]
+    },
+    {
+        id: "beat-drop",
+        title: "Blaze the Stage",
+        date: "April 17, 2025",
+        time: "10:00 AM - 05:00 PM",
+        venue: "Yet to be decided",
+        image: "images/events/BeatDrop.jpg",
+        ruleBook: "https://drive.google.com/file/d/1aVGZH2VLkUoceCJVaiY0pAYqZUzbmfMo/view?usp=sharing",
+        description: `"Inter-College Dance Competition. Get ready to Blaze the stage! an electrifying inter-college dance competition that promises to showcase the best of talent, energy, and enthusiasm. Calling all dance enthusiasts!"`,
+        coordinators: [
+            { name: "Harshvardhan Singh", contact: "+91 81122 80766" },
+            { name: "Janvi Patel", contact: "+91 9587686203" }
         ]
     },
     {
         id: "Drama",
-        title: "Drama",
-        date: "March 15, 2025",
+        title: "Theatrical Thunder",
+        date: "April 17, 2025",
         time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
+        venue: "Yet to be decided",
         image: "images/events/Drama.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
+        ruleBook: "https://drive.google.com/file/d/1V4HjW_syj6iRgiiYnOnCNJC0pJnk7QjI/view?usp=sharing",
+        description: "Theatrical thunder is the stage drama event at Rudrika 2025, where participants will perform a live play. The performance should showcase acting, creativity, direction, and technical skills. The play will be performed on stage in front of an audience, and it's a platform for teams to present their dramatic talents.",
         coordinators: [
             { name: "Aryan Srivastav", contact: "+91 7091429578" },
             { name: "Vinay Ramani", contact: "+91 8058278284" }
         ]
     },
     {
-        id: "BeatBoxing",
-        title: "Beat Boxing",
-        date: "March 15, 2025",
-        time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
-        image: "images/events/BeatBox.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
-        coordinators: [
-            { name: "Arya Sharma", contact: "+91 8118848846" },
-            { name: "Mayank Chandel", contact: "+91 8690316625" }
-        ]
-    },
-    {
-        id: "DJwar",
-        title: "DJ war",
-        date: "March 15, 2025",
-        time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
-        image: "images/events/DJwar.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
-        coordinators: [
-            { name: "Aditya Kumawat", contact: "+91 8005563032" },
-            { name: "Aakanksha Sehgal", contact: "+91 9257745337" }
-        ]
-    },
-    {
         id: "Band",
-        title: "Band",
-        date: "March 15, 2025",
+        title: "Rock the Stage",
+        date: "April 17, 2025",
         time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
+        venue: "Yet to be decided",
         image: "images/events/Band.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
+        ruleBook: "https://drive.google.com/file/d/1l2jNkHQtJ8A2oZM4sHRA2AdG5RrHGELw/view?usp=sharing",
+        description: "Rock the Stage is an electrifying musical competition where bands from various genres come together to showcase their talent, creativity, and stage presence. This event is designed to celebrate live music, foster collaboration among musicians, and provide a platform for emerging bands to make their mark.",
         coordinators: [
             { name: "Ketan Suthar", contact: "+91 9819678847" },
             { name: "Rahul Khanna", contact: "+91 8209686398" }
         ]
     },
     {
-        id: "Case Investigation",
-        title: "Case Investigation",
-        date: "March 15, 2025",
+        id: "DJwar",
+        title: "Turntable Titans",
+        date: "April 17, 2025",
         time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
-        image: "images/events/CaseInvest.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
+        venue: "Yet to be decided",
+        image: "images/events/DJwar.jpg",
+        ruleBook: "https://drive.google.com/file/d/1JVyDrKB6e6haSD-igo7udTkrgZLL6JWx/view?usp=sharing",
+        description: "Get ready for an electrifying battle of beats and rhythm! DJ War is where top DJs go head-to-head, bringing their best mixes and energy to the stage. It's more than just playing tracks - it's about commanding the crowd, blending music with skill, and delivering an unforgettable experience.",
         coordinators: [
-            { name: "Akanksha Rathore", contact: "+91 8764072476" },
-            { name: "Tanshi Arora", contact: "+91 6376204248" }
+            { name: "Aditya Kumawat", contact: "+91 8005563032" },
+            { name: "Aakanksha Sehgal", contact: "+91 9257745337" }
         ]
     },
     {
-        id: "Fashion Show",
-        title: "Fashion Show",
-        date: "March 15, 2025",
+        id: "xFactor",
+        title: "Beyond the Spotlight",
+        date: "April 17, 2025",
         time: "10:00 AM - 05:00 PM",
-        venue: "Main Auditorium",
-        image: "images/events/FashionShow.jpg",
-        ruleBook: "files/techfest-rules.pdf",
-        description: "Tech Fest is a showcase of innovation, technology, and competition.",
+        venue: "Yet to be decided",
+        image: "images/events/xFactor.jpg",
+        ruleBook: "https://drive.google.com/file/d/1AYTKyyWb7tHv3ey62tBijdf7kovPpbQ6/view?usp=sharing",
+        description: "This is a captivating event that blends the magic of Shayari, Poetry, Rap and Stand-up Comedy creating an unforgettable experience of emotions, rhythm and laughter. The participants have the pickup category-solo,duo and crew.",
         coordinators: [
-            { name: "Parul Sharma", contact: "+91 9257142145" },
-            { name: "Harshal Roy", contact: "+91 7742797417" }
+            { name: "Devine Alphonso", contact: "+91 6362563196" },
+            { name: "Rudransh Upadhyay", contact: "+91 9521121626" }
+        ]
+    },
+    {
+        id: "BeatBoxing",
+        title: "Vocal Vertex",
+        date: "April 17, 2025",
+        time: "10:00 AM - 05:00 PM",
+        venue: "Yet to be decided",
+        image: "images/events/BeatBox.jpg",
+        ruleBook: "https://drive.google.com/file/d/1ksFbJCPhZyefPNJ8JOGNLXrvW3R-drkf/view?usp=sharing",
+        description: "In VOCAL VERTEX (Beat Boxing) is a competition, performance, or gathering where beatboxers showcase their skills in vocal percussion and they have to pickup the category either solo or duo only.",
+        coordinators: [
+            { name: "Arya Sharma", contact: "+91 8118848846" },
+            { name: "Mayank Chandel", contact: "+91 8690316625" }
+        ]
+    },
+    {
+        id: "Case Investigation",
+        title: "Riddle Raiders",
+        date: "April 17, 2025",
+        time: "10:00 AM - 05:00 PM",
+        venue: "Yet to be decided",
+        image: "images/events/CaseInvest.jpg",
+        ruleBook: "https://drive.google.com/file/d/1fEsf0blidaRWJPBejgHD-ujJJEtl5U6R/view?usp=sharing",
+        description: "Riddle Raiders is an exhilarating treasure hunt designed to challenge participants' problem-solving skills, teamwork, and strategic thinking. Teams will navigate through a series of clues and challenges, racing against time to uncover hidden treasures. The adventure unfolds across different locations, each presenting unique puzzles and obstacles.",
+        coordinators: [
+            { name: "Akanksha Rathore", contact: "+91 8764072476" },
+            { name: "Tanshi Arora", contact: "+91 6376204248" }
         ]
     }
 ];
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("preloader").style.display = "none";
             document.getElementById("content").style.display = "block"; // Show main content
         }, 1000);
-    }, 4500);
+    }, 10);
 });
 
 // Function to get the event ID from the URL (?event= format)

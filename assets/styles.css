@@ -133,6 +133,19 @@ pointer-particles {
     z-index: 101;
 }
 
+#rules-list {
+    list-style-type: disclosure-closed;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+#rules-list li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 1.5);
+}
+
 /* 3D Popup Overlay */
 #popupOverlay {
     position: fixed;
@@ -721,7 +734,7 @@ ul li {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 12px;
-    background-color: #21a3aa; /* WhatsApp Green */
+    background-color: #1c3b4e; /* WhatsApp Green */
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -730,7 +743,7 @@ ul li {
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebea5;
+    background-color: #0e804b;
 }
 
 
