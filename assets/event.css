@@ -138,6 +138,7 @@ body {
 .rulebook-link {
     display: inline-block;
     margin-top: 10px;
+    margin-right: 15px;
     padding: 10px 15px;
     background-color: #1c3b4e;
     color: white;

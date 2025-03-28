@@ -10,6 +10,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/Singing.jpg",
         ruleBook: "https://drive.google.com/file/d/1qEsabFU5xQbT3HY8BfXWp_RNy_4NWP01/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Get ready to be mesmerized at Euphonic Echoes, where voices take center stage and melodies fill the air! This unforgettable event will celebrate the power of music, with captivating performances, stunning harmonies, and raw talent that resonate with every note.",
         coordinators: [
             { name: "Ashutosh Bissa", contact: "+91 8949276044" },
@@ -24,6 +25,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/FashionShow.jpg",
         ruleBook: "https://drive.google.com/file/d/11LOdHHA6_kr8Oo09Gk52OEMz5ehCaeZL/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Get ready to be captivated at our upcoming fashion show, where creativity meets runway! It is an unforgettable evening that will be celebrating bold designs, innovative styles, and the unique flairs. This is more than just a fashion show-it's a vibrant showcase of self-expression, diversity and fusion of fashion.",
         coordinators: [
             { name: "Parul Sharma", contact: "+91 9257142145" },
@@ -38,6 +40,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/BeatDrop.jpg",
         ruleBook: "https://drive.google.com/file/d/1aVGZH2VLkUoceCJVaiY0pAYqZUzbmfMo/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: `"Inter-College Dance Competition. Get ready to Blaze the stage! an electrifying inter-college dance competition that promises to showcase the best of talent, energy, and enthusiasm. Calling all dance enthusiasts!"`,
         coordinators: [
             { name: "Harshvardhan Singh", contact: "+91 81122 80766" },
@@ -52,6 +55,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/Drama.jpg",
         ruleBook: "https://drive.google.com/file/d/1V4HjW_syj6iRgiiYnOnCNJC0pJnk7QjI/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Theatrical thunder is the stage drama event at Rudrika 2025, where participants will perform a live play. The performance should showcase acting, creativity, direction, and technical skills. The play will be performed on stage in front of an audience, and it's a platform for teams to present their dramatic talents.",
         coordinators: [
             { name: "Aryan Srivastav", contact: "+91 7091429578" },
@@ -66,6 +70,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/Band.jpg",
         ruleBook: "https://drive.google.com/file/d/1l2jNkHQtJ8A2oZM4sHRA2AdG5RrHGELw/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Rock the Stage is an electrifying musical competition where bands from various genres come together to showcase their talent, creativity, and stage presence. This event is designed to celebrate live music, foster collaboration among musicians, and provide a platform for emerging bands to make their mark.",
         coordinators: [
             { name: "Ketan Suthar", contact: "+91 9819678847" },
@@ -80,6 +85,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/DJwar.jpg",
         ruleBook: "https://drive.google.com/file/d/1JVyDrKB6e6haSD-igo7udTkrgZLL6JWx/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Get ready for an electrifying battle of beats and rhythm! DJ War is where top DJs go head-to-head, bringing their best mixes and energy to the stage. It's more than just playing tracks - it's about commanding the crowd, blending music with skill, and delivering an unforgettable experience.",
         coordinators: [
             { name: "Aditya Kumawat", contact: "+91 8005563032" },
@@ -94,6 +100,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/xFactor.jpg",
         ruleBook: "https://drive.google.com/file/d/1AYTKyyWb7tHv3ey62tBijdf7kovPpbQ6/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "This is a captivating event that blends the magic of Shayari, Poetry, Rap and Stand-up Comedy creating an unforgettable experience of emotions, rhythm and laughter. The participants have the pickup category-solo,duo and crew.",
         coordinators: [
             { name: "Devine Alphonso", contact: "+91 6362563196" },
@@ -108,6 +115,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/BeatBox.jpg",
         ruleBook: "https://drive.google.com/file/d/1ksFbJCPhZyefPNJ8JOGNLXrvW3R-drkf/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "In VOCAL VERTEX (Beat Boxing) is a competition, performance, or gathering where beatboxers showcase their skills in vocal percussion and they have to pickup the category either solo or duo only.",
         coordinators: [
             { name: "Arya Sharma", contact: "+91 8118848846" },
@@ -122,6 +130,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/CaseInvest.jpg",
         ruleBook: "https://drive.google.com/file/d/1fEsf0blidaRWJPBejgHD-ujJJEtl5U6R/view?usp=sharing",
+        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Riddle Raiders is an exhilarating treasure hunt designed to challenge participants' problem-solving skills, teamwork, and strategic thinking. Teams will navigate through a series of clues and challenges, racing against time to uncover hidden treasures. The adventure unfolds across different locations, each presenting unique puzzles and obstacles.",
         coordinators: [
             { name: "Akanksha Rathore", contact: "+91 8764072476" },
@@ -190,6 +199,7 @@ function loadEvent(eventId) {
     document.getElementById("event-venue").innerText = event.venue;
     document.getElementById("event-image").src = event.image;
     document.getElementById("rule-book").href = event.ruleBook;
+    document.getElementById("register").href = event.register;
     document.getElementById("event-description").innerText = event.description;
 
     // Update Coordinator Section
