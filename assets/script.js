@@ -58,7 +58,7 @@ const events = [
         register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
         description: "Theatrical thunder is the stage drama event at Rudrika 2025, where participants will perform a live play. The performance should showcase acting, creativity, direction, and technical skills. The play will be performed on stage in front of an audience, and it's a platform for teams to present their dramatic talents.",
         coordinators: [
-            { name: "Aryan Srivastav", contact: "+91 7091429578" },
+            { name: "Agamya Bansal", contact: "+91 7296856531" },
             { name: "Vinay Ramani", contact: "+91 8058278284" }
         ]
     },
@@ -120,21 +120,6 @@ const events = [
         coordinators: [
             { name: "Arya Sharma", contact: "+91 8118848846" },
             { name: "Mayank Chandel", contact: "+91 8690316625" }
-        ]
-    },
-    {
-        id: "Case Investigation",
-        title: "Riddle Raiders",
-        date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
-        venue: "Yet to be decided",
-        image: "images/events/CaseInvest.jpg",
-        ruleBook: "https://drive.google.com/file/d/1fEsf0blidaRWJPBejgHD-ujJJEtl5U6R/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
-        description: "Riddle Raiders is an exhilarating treasure hunt designed to challenge participants' problem-solving skills, teamwork, and strategic thinking. Teams will navigate through a series of clues and challenges, racing against time to uncover hidden treasures. The adventure unfolds across different locations, each presenting unique puzzles and obstacles.",
-        coordinators: [
-            { name: "Akanksha Rathore", contact: "+91 8764072476" },
-            { name: "Tanshi Arora", contact: "+91 6376204248" }
         ]
     }
 ];
