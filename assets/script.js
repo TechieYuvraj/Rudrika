@@ -6,11 +6,11 @@ const events = [
         id: "Singing",
         title: "Euphonic Echoes",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/Singing.jpg",
         ruleBook: "https://drive.google.com/file/d/1qEsabFU5xQbT3HY8BfXWp_RNy_4NWP01/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "Get ready to be mesmerized at Euphonic Echoes, where voices take center stage and melodies fill the air! This unforgettable event will celebrate the power of music, with captivating performances, stunning harmonies, and raw talent that resonate with every note.",
         coordinators: [
             { name: "Ashutosh Bissa", contact: "+91 8949276044" },
@@ -21,11 +21,11 @@ const events = [
         id: "Fashion Show",
         title: "Majestic Threads",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/FashionShow.jpg",
         ruleBook: "https://drive.google.com/file/d/11LOdHHA6_kr8Oo09Gk52OEMz5ehCaeZL/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "Get ready to be captivated at our upcoming fashion show, where creativity meets runway! It is an unforgettable evening that will be celebrating bold designs, innovative styles, and the unique flairs. This is more than just a fashion show-it's a vibrant showcase of self-expression, diversity and fusion of fashion.",
         coordinators: [
             { name: "Parul Sharma", contact: "+91 9257142145" },
@@ -36,11 +36,11 @@ const events = [
         id: "beat-drop",
         title: "Blaze the Stage",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/BeatDrop.jpg",
         ruleBook: "https://drive.google.com/file/d/1aVGZH2VLkUoceCJVaiY0pAYqZUzbmfMo/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: `"Inter-College Dance Competition. Get ready to Blaze the stage! an electrifying inter-college dance competition that promises to showcase the best of talent, energy, and enthusiasm. Calling all dance enthusiasts!"`,
         coordinators: [
             { name: "Harshvardhan Singh", contact: "+91 81122 80766" },
@@ -51,11 +51,11 @@ const events = [
         id: "Drama",
         title: "Theatrical Thunder",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/Drama.jpg",
         ruleBook: "https://drive.google.com/file/d/1V4HjW_syj6iRgiiYnOnCNJC0pJnk7QjI/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "Theatrical thunder is the stage drama event at Rudrika 2025, where participants will perform a live play. The performance should showcase acting, creativity, direction, and technical skills. The play will be performed on stage in front of an audience, and it's a platform for teams to present their dramatic talents.",
         coordinators: [
             { name: "Agamya Bansal", contact: "+91 7296856531" },
@@ -66,7 +66,7 @@ const events = [
         id: "Band",
         title: "Rock the Stage",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/Band.jpg",
         ruleBook: "https://drive.google.com/file/d/1l2jNkHQtJ8A2oZM4sHRA2AdG5RrHGELw/view?usp=sharing",
@@ -81,7 +81,7 @@ const events = [
         id: "DJwar",
         title: "Turntable Titans",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/DJwar.jpg",
         ruleBook: "https://drive.google.com/file/d/1JVyDrKB6e6haSD-igo7udTkrgZLL6JWx/view?usp=sharing",
@@ -96,7 +96,7 @@ const events = [
         id: "xFactor",
         title: "Beyond the Spotlight",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/xFactor.jpg",
         ruleBook: "https://drive.google.com/file/d/1AYTKyyWb7tHv3ey62tBijdf7kovPpbQ6/view?usp=sharing",
@@ -111,7 +111,7 @@ const events = [
         id: "BeatBoxing",
         title: "Vocal Vertex",
         date: "April 17, 2025",
-        time: "10:00 AM - 05:00 PM",
+        time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/BeatBox.jpg",
         ruleBook: "https://drive.google.com/file/d/1ksFbJCPhZyefPNJ8JOGNLXrvW3R-drkf/view?usp=sharing",
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("preloader").style.display = "none";
             document.getElementById("content").style.display = "block"; // Show main content
         }, 1000);
-    }, 3900);
+    }, 30);
 });
 
 // Function to get the event ID from the URL (?event= format)
