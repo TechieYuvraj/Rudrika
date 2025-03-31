@@ -9,19 +9,19 @@ const eventPricing = {
     "Rock the Stage": { group: 999 },
     "Turntable Titans": { solo: 299 },
     "Beyond the Spotlight": { solo: 299, duo: 399, group: 699 },
-    "Vocal Vertex": { solo: 199, duo: 399 }
+    "Vocal Vertex": { duo: 399 }
 };
 
 // Allowed team sizes based on event type
 const eventTeamSizes = {
-    "Euphonic Echoes": { solo: [1], duo: [2], group: [4, 8] },
+    "Euphonic Echoes": { solo: [1, 1], duo: [2, 2], group: [4, 8] },
     "Majestic Threads": { group: [5, 20] },
-    "Blaze the Stage": { solo: [1], duo: [2], group: [4, 15] },
+    "Blaze the Stage": { solo: [1, 1], duo: [2, 2], group: [4, 15] },
     "Theatrical Thunder": { group: [8, 12] },
     "Rock the Stage": { group: [3, 5] },
-    "Turntable Titans": { solo: [1] },
-    "Beyond the Spotlight": { solo: [1], duo: [2], group: [4, 8] },
-    "Vocal Vertex": { solo: [1], duo: [2] }
+    "Turntable Titans": { solo: [1, 1] },
+    "Beyond the Spotlight": { solo: [1, 1], duo: [2, 2], group: [4, 8] },
+    "Vocal Vertex": { duo: [2, 2] }
 };
 
 // Form elements
@@ -38,6 +38,10 @@ eventSelect.addEventListener("change", function () {
     updateTeamTypeOptions(selectedEvent);
 });
 
+// Ensure team size selection is always visible
+teamSizeSelect.classList.remove("hidden");
+teamSizeLabel.classList.remove("hidden");
+
 // Update team type options based on selected event
 function updateTeamTypeOptions(event) {
     teamTypeSelect.innerHTML = `<option value="" disabled selected>Select Team Type</option>`;
@@ -51,7 +55,8 @@ function updateTeamTypeOptions(event) {
         });
     }
 
-    teamSizeSelect.classList.add("hidden");
+    teamSizeSelect.value = "";
+    teamSizeSelect.disabled = true; // Default: disable team size until selection
     memberDetails.innerHTML = "";
     updatePaymentLink(); // Reset payment link
 }
@@ -63,12 +68,32 @@ teamTypeSelect.addEventListener("change", function () {
 
     if (!eventTeamSizes[selectedEvent] || !eventTeamSizes[selectedEvent][selectedType]) return;
 
-    // Show team size selection for groups
-    if (selectedType === "group") {
-        teamSizeSelect.classList.remove("hidden");
-        teamSizeLabel.classList.remove("hidden"); // Show label as well
+    if (selectedType === "solo") {
         teamSizeSelect.innerHTML = "";
+        let [min, max] = eventTeamSizes[selectedEvent].solo;
+        for (let i = min; i <= max; i++) {
+            let option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            teamSizeSelect.appendChild(option);
+        }
+        teamSizeSelect.disabled = false; // Enable selection for group
+        teamSizeSelect.dispatchEvent(new Event("change")); // Trigger event
 
+    } else if (selectedType === "duo") {
+        teamSizeSelect.innerHTML = "";
+        let [min, max] = eventTeamSizes[selectedEvent].duo;
+        for (let i = min; i <= max; i++) {
+            let option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            teamSizeSelect.appendChild(option);
+        }
+        teamSizeSelect.disabled = false; // Enable selection for group
+        teamSizeSelect.dispatchEvent(new Event("change")); // Trigger event
+
+    } else if (selectedType === "group") {
+        teamSizeSelect.innerHTML = "";
         let [min, max] = eventTeamSizes[selectedEvent].group;
         for (let i = min; i <= max; i++) {
             let option = document.createElement("option");
@@ -76,13 +101,8 @@ teamTypeSelect.addEventListener("change", function () {
             option.textContent = i;
             teamSizeSelect.appendChild(option);
         }
-
-        teamSizeSelect.dispatchEvent(new Event("change")); // Trigger change event to update member fields
-    } else {
-        teamSizeSelect.classList.add("hidden");
-        teamSizeLabel.classList.add("hidden"); // Hide label when not needed
-        updateMemberFields(selectedType === "duo" ? 2 : 1);
-        updatePaymentLink(selectedEvent, selectedType, selectedType === "duo" ? 2 : 1);
+        teamSizeSelect.disabled = false; // Enable selection for group
+        teamSizeSelect.dispatchEvent(new Event("change")); // Trigger event
     }
 });
 
@@ -101,15 +121,15 @@ function updateMemberFields(teamSize) {
     memberDetails.innerHTML = "";
     if (teamSize > 1) {
         memberDetails.classList.remove("hidden");
-        for (let i = 1; i < teamSize; i++) {
+        for (let i = 1; i < teamSize; i++) {  // Start from 1 (Leader is already there)
             let div = document.createElement("div");
             div.innerHTML = `
                 <label>Member ${i} Name:</label>
-                <input type="text" class="memberName" required><br><br>
+                <input type="text" name="memberName${i}" class="memberName" required><br><br>
                 <label>Member ${i} Email:</label>
-                <input type="email" class="memberEmail" required><br><br>
+                <input type="email" name="memberEmail${i}" class="memberEmail" required><br><br>
                 <label>Member ${i} Phone No.:</label>
-                <input type="tel" class="memberPhone" required><br><br>
+                <input type="tel" name="memberPhone${i}" class="memberPhone" required pattern="[0-9]{10}" title="Enter 10-digit phone number"><br><br>
             `;
             memberDetails.appendChild(div);
         }
@@ -132,14 +152,14 @@ function updatePaymentLink(event = "", type = "", size = 1) {
 // Handle form submission
 document.getElementById("eventForm").addEventListener("submit", function (e) {
     e.preventDefault();
-    fetch("https://script.google.com/macros/s/AKfycbzmUUN3I9WSvKTClU-97cH4cBUaqYCNvkQ5pK86QCLqaeQpLtOzWvFR3YRo7FzI-X0/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyQU11bzIqetmn9KmPGHb4YpJh1laf-L6a_qBn0xrCweEbdLQIHqQXSdAA6dXVBfFw/exec", {
         method: "POST",
         body: new FormData(this)
     })
         .then(response => response.text())
         .then(data => {
             alert("Registration Successful!");
-            window.location.href = "index.html"; // Redirect to home
+            window.location.href = "register.html"; // Redirect to home
         })
         .catch(error => console.error("Error:", error));
 });
@@ -178,8 +198,3 @@ document.getElementById("leaderMobile").addEventListener("input", function () {
 document.getElementById("leaderEmail").addEventListener("input", function () {
     this.value = this.value.replace(/\s/g, ""); // Remove spaces
 });
-
-function showTeamSize() {
-    document.getElementById("teamSizeLabel").classList.remove("hidden");
-    document.getElementById("teamSize").classList.remove("hidden");
-}

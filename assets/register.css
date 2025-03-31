@@ -23,9 +23,13 @@ form {
 }
 
 h2 {
-    text-align: center;
-    color: #4da8da;
+    font-size: 50px;
+    color: #fff;
     margin-bottom: 20px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 6px;
 }
 
 label {
