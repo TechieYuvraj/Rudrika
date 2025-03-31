@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration</title>
     <link rel="stylesheet" href="/assets/register.css?v=2.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 </head>
 
 <body>
@@ -57,6 +60,9 @@
         <label>Payment:</label>
         <a id="paymentLink" href="#" target="_blank">Pay Now</a>
 
+        <button id="generateQR">Click to Scan</button>
+        <div id="qrCodeContainer" style="margin-top: 10px;"></div>
+        
         <label>UTR Number:</label>
         <input type="text" id="utrNumber" name="utrNumber" required>
 

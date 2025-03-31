@@ -13,7 +13,7 @@ body {
 
 /* Form Container */
 form {
-    background: rgba(0, 0, 50, 0.8);
+    background: #215f7c;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -75,7 +75,8 @@ input::placeholder {
 a#paymentLink {
     display: block; /* Ensures margin auto works */
     text-align: center;
-    background: #4da8da;
+    font-family: 'Poppins', sans-serif;
+    background: #1c3b4e;
     color: white;
     text-decoration: none;
     margin: 20px auto; /* Centers the link horizontally */
@@ -90,10 +91,36 @@ a#paymentLink:hover {
     background: #1e6091;
 }
 
+#generateQR {
+    display: block; /* Ensures margin auto works */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #1c3b4e;
+    color: white;
+    text-decoration: none;
+    margin: 20px auto; /* Centers the link horizontally */
+    width: 30%; /* Adjusts the width of the link */
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#qrCodeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#qrCodeContainer img {
+    background: white;
+    padding: 10px;
+}
+
 /* Submit Button */
 button {
     width: 30%;
-    background: #4da8da;
+    background: #1c3b4e;
     color: white;
     border: none;
     padding: 12px;

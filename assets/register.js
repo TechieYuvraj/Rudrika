@@ -198,3 +198,24 @@ document.getElementById("leaderMobile").addEventListener("input", function () {
 document.getElementById("leaderEmail").addEventListener("input", function () {
     this.value = this.value.replace(/\s/g, ""); // Remove spaces
 });
+
+document.getElementById("generateQR").addEventListener("click", function () {
+    let upiLink = paymentLink.href;
+
+    if (upiLink === "#") {
+        alert("Please select an event and team type to generate the payment link.");
+        return;
+    }
+
+    let qrCodeContainer = document.getElementById("qrCodeContainer");
+    qrCodeContainer.innerHTML = ""; // Clear any previous QR codes
+
+    let qrCode = new QRCode(qrCodeContainer, {
+        text: upiLink,
+        width: 250,
+        height: 250,
+        colorDark: "#000", // Black QR code
+        colorLight: "#fff", // White background
+        correctLevel: QRCode.CorrectLevel.H // High error correction
+    });
+});
