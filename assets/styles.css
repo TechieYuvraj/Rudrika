@@ -416,13 +416,11 @@ nav { /* Phone View */
 
 nav a { /* Desktop View */
     font-family: "Playfair Display", serif;
-    letter-spacing: 3px; /* Adds a magical touch */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     color: white;
-    gap: 20px;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     padding: 10px;
     transition: 0.3s ease-in-out;
     position: relative;
@@ -617,6 +615,25 @@ ul li {
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.rulebook-btn {
+    background-color: #1299d7;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0 20px;
+    text-align: center;
+    transition: 0.3s;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.rulebook-btn:hover {
+    box-shadow: 0 0 20px #dcdcdc;
+    transform: perspective(1000px) rotateY(15deg) translateY(-5px);
 }
 
 /* =======================

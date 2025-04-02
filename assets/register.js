@@ -2,14 +2,14 @@ const upiBaseLink = "upi://pay?pa=kritikarohilla11294@okicici&tn=Click%20to%20pa
 
 // Pricing table based on event and team size
 const eventPricing = {
-    "Euphonic Echoes": { solo: 199, duo: 399, group: 799 },
+    "Euphonic Echoes": { solo: 199, duo: 399 },
     "Majestic Threads": { group: 799 },
     "Blaze the Stage": { solo: 299, duo: 499, group: 899 },
     "Theatrical Thunder": { group: 999 },
-    "Rock the Stage": { group: 999 },
+    "Rock the Stage": { group: 799 },
     "Turntable Titans": { solo: 299 },
     "Beyond the Spotlight": { solo: 299, duo: 399, group: 699 },
-    "Vocal Vertex": { duo: 399 }
+    "Vocal Vertex": { solo: 199 }
 };
 
 // Allowed team sizes based on event type
@@ -130,6 +130,8 @@ function updateMemberFields(teamSize) {
                 <input type="email" name="memberEmail${i}" class="memberEmail" required><br><br>
                 <label>Member ${i} Phone No.:</label>
                 <input type="tel" name="memberPhone${i}" class="memberPhone" required pattern="[0-9]{10}" title="Enter 10-digit phone number"><br><br>
+                <label>Member ${i} Roll No.:</label>
+                <input type="text" name="memberRollNo${i}" class="memberRollNo" required><br><br>
             `;
             memberDetails.appendChild(div);
         }
@@ -148,21 +150,6 @@ function updatePaymentLink(event = "", type = "", size = 1) {
     let amount = eventPricing[event][type] || 0;
     paymentLink.href = `${upiBaseLink}${amount}&cu=INR`;
 }
-
-// Handle form submission
-document.getElementById("eventForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    fetch("https://script.google.com/macros/s/AKfycbyQU11bzIqetmn9KmPGHb4YpJh1laf-L6a_qBn0xrCweEbdLQIHqQXSdAA6dXVBfFw/exec", {
-        method: "POST",
-        body: new FormData(this)
-    })
-        .then(response => response.text())
-        .then(data => {
-            alert("Registration Successful!");
-            window.location.href = "register.html"; // Redirect to home
-        })
-        .catch(error => console.error("Error:", error));
-});
 
 function createSnowflake() {
     const snowflake = document.createElement("div");
@@ -218,4 +205,84 @@ document.getElementById("generateQR").addEventListener("click", function () {
         colorLight: "#fff", // White background
         correctLevel: QRCode.CorrectLevel.H // High error correction
     });
+});
+
+import { validRollNumbers } from "./rollNumbers.js"; // Adjust the path if needed
+
+document.addEventListener("DOMContentLoaded", function () {
+    const gitCheckbox = document.getElementById("gitStudent");
+    const rollNoField = document.getElementById("rollNoField");
+    const utrField = document.getElementById("utrNumber");
+    const payButton = document.getElementById("paymentLink");
+    const scanToPayButton = document.getElementById("generateQR");
+    const qrCodeContainer = document.getElementById("qrCodeContainer");
+    const gitpayment = document.getElementById("gitpayment");
+    const gitUTR = document.getElementById("gitUTR");
+
+    // Toggle visibility based on GIT checkbox
+    gitCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+            rollNoField.style.display = "block"; // Show Roll No field
+            utrField.style.display = "none"; // Hide UTR field
+            payButton.style.display = "none"; // Hide Pay Now button
+            scanToPayButton.style.display = "none"; // Hide Scan to Pay button
+            qrCodeContainer.style.display = "none"; // Hide QR Code container
+            gitpayment.style.display = "none"; // Hide GIT label
+            gitUTR.style.display = "none"; // Hide UTR label
+            utrField.removeAttribute("required");
+        } else {
+            rollNoField.style.display = "none";
+            utrField.style.display = "block";
+            payButton.style.display = "inline-block";
+            scanToPayButton.style.display = "inline-block";
+            qrCodeContainer.style.display = "block";
+            gitpayment.style.display = "block"; // Show GIT label
+            gitUTR.style.display = "block"; // Show UTR label
+            utrField.setAttribute("required", "true");
+        }
+    });
+});
+
+document.querySelector("form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const gitCheckbox = document.getElementById("gitStudent");
+    const rollNoInput = document.getElementById("rollNo").value.trim();
+
+    // Validate Roll No if GIT checkbox is checked
+    if (gitCheckbox.checked) {
+        if (!validRollNumbers.includes(rollNoInput)) {
+            alert("Invalid Roll Number! Please enter a valid GIT Roll Number.");
+            return; // Stop submission if Roll No is invalid
+        }
+    }
+
+    // Validate Member Roll Numbers
+    let invalidRollNumbers = [];
+    document.querySelectorAll(".memberRollNo").forEach(input => {
+        let rollNo = input.value.trim();
+        if (rollNo && !validRollNumbers.includes(rollNo)) {
+            invalidRollNumbers.push(rollNo);
+            input.style.border = "2px solid red"; // Highlight invalid field
+        } else {
+            input.style.border = ""; // Reset border if valid
+        }
+    });
+
+    if (invalidRollNumbers.length > 0) {
+        alert("Invalid Member Roll Numbers: " + invalidRollNumbers.join(", "));
+        return; // Stop submission if any roll number is invalid
+    }
+
+    // Proceed with form submission to the server
+    fetch("https://script.google.com/macros/s/AKfycbzyeRKh0iAdUbxL008sgN6FQ0iuz4X5Ym8sU1xWNGCU67FBXxuAzQNwG2UHlC-4IC4/exec", {
+        method: "POST",
+        body: new FormData(this)
+    })
+        .then(response => response.text())
+        .then(data => {
+            alert("Registration Successful!");
+            window.location.href = "register.html"; // Redirect to home
+        })
+        .catch(error => console.error("Error:", error));
 });

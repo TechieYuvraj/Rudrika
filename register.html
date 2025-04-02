@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration</title>
-    <link rel="stylesheet" href="/assets/register.css?v=2.2">
+    <link rel="stylesheet" href="/assets/register.css?v=2.3">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
@@ -55,22 +55,33 @@
         <input type="email" id="leaderEmail" name="leaderEmail" required
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address">
 
+        <label class="checkbox">
+            I am a student of GIT College
+            <input type="checkbox" id="gitStudent">
+        </label>
+        <p style="color: rgb(192, 134, 134);">Kindly contact at 7398226246 if your Roll No is not in the list.</p>
+
+        <div id="rollNoField" style="display: none;">
+            <label>Enter Your Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" />
+        </div>
+
         <div id="memberDetails" class="hidden"></div>
 
-        <label>Payment:</label>
+        <label id="gitpayment">Payment:</label>
         <a id="paymentLink" href="#" target="_blank">Pay Now</a>
 
         <button id="generateQR">Click to Scan</button>
         <div id="qrCodeContainer" style="margin-top: 10px;"></div>
-        
-        <label>UTR Number:</label>
+
+        <label id="gitUTR">UTR Number:</label>
         <input type="text" id="utrNumber" name="utrNumber" required>
 
         <button type="submit">Submit</button>
     </form>
 
-    <script src="/assets/register.js?v=2.2"></script>
-    <Script src="/assets/pointer.js?v=2.2"></Script>
+    <script src="/assets/register.js?v=2.3" type="module"></script>
+    <Script src="/assets/pointer.js?v=2.3"></Script>
 </body>
 
 </html>

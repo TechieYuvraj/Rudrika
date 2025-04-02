@@ -9,7 +9,7 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/Singing.jpg",
-        ruleBook: "https://drive.google.com/file/d/1qEsabFU5xQbT3HY8BfXWp_RNy_4NWP01/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1JF7whn8F0_H9qByrFO5F41n4c8E3NwzJ/view?usp=sharing",
         register: "register.html",
         description: "Get ready to be mesmerized at Euphonic Echoes, where voices take center stage and melodies fill the air! This unforgettable event will celebrate the power of music, with captivating performances, stunning harmonies, and raw talent that resonate with every note.",
         coordinators: [
@@ -24,7 +24,7 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/FashionShow.jpg",
-        ruleBook: "https://drive.google.com/file/d/11LOdHHA6_kr8Oo09Gk52OEMz5ehCaeZL/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1pv9AkILzrnpR4-wXmXegHD6EtnZ4jdH0/view?usp=sharing",
         register: "register.html",
         description: "Get ready to be captivated at our upcoming fashion show, where creativity meets runway! It is an unforgettable evening that will be celebrating bold designs, innovative styles, and the unique flairs. This is more than just a fashion show-it's a vibrant showcase of self-expression, diversity and fusion of fashion.",
         coordinators: [
@@ -39,12 +39,12 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/BeatDrop.jpg",
-        ruleBook: "https://drive.google.com/file/d/1aVGZH2VLkUoceCJVaiY0pAYqZUzbmfMo/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1C0AU-XoO2hrSau-QJ4ehttxlvrzVaJH8/view?usp=sharing",
         register: "register.html",
         description: `"Inter-College Dance Competition. Get ready to Blaze the stage! an electrifying inter-college dance competition that promises to showcase the best of talent, energy, and enthusiasm. Calling all dance enthusiasts!"`,
         coordinators: [
             { name: "Harshvardhan Singh", contact: "+91 81122 80766" },
-            { name: "Janvi Patel", contact: "+91 9587686203" }
+            { name: "Akanksha Rathore", contact: "+91 8094890603" }
         ]
     },
     {
@@ -54,7 +54,7 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/Drama.jpg",
-        ruleBook: "https://drive.google.com/file/d/1V4HjW_syj6iRgiiYnOnCNJC0pJnk7QjI/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1xFM_unIe1QcUxqJJLWv9go3Ta_HQ9gpm/view?usp=sharing",
         register: "register.html",
         description: "Theatrical thunder is the stage drama event at Rudrika 2025, where participants will perform a live play. The performance should showcase acting, creativity, direction, and technical skills. The play will be performed on stage in front of an audience, and it's a platform for teams to present their dramatic talents.",
         coordinators: [
@@ -69,11 +69,11 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/Band.jpg",
-        ruleBook: "https://drive.google.com/file/d/1l2jNkHQtJ8A2oZM4sHRA2AdG5RrHGELw/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1km5z5fw6SfCAGMvfZOYmpHcHm3rEdlK8/view?usp=sharing",
         register: "register.html",
         description: "Rock the Stage is an electrifying musical competition where bands from various genres come together to showcase their talent, creativity, and stage presence. This event is designed to celebrate live music, foster collaboration among musicians, and provide a platform for emerging bands to make their mark.",
         coordinators: [
-            { name: "Ketan Suthar", contact: "+91 9819678847" },
+            { name: "Ayushman Dakua", contact: "+91 8154936395" },
             { name: "Rahul Khanna", contact: "+91 8209686398" }
         ]
     },
@@ -84,7 +84,7 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/DJwar.jpg",
-        ruleBook: "https://drive.google.com/file/d/1JVyDrKB6e6haSD-igo7udTkrgZLL6JWx/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1IpWViLqF6ssHVc44K3gkld-VQWpuMi2X/view?usp=sharing",
         register: "register.html",
         description: "Get ready for an electrifying battle of beats and rhythm! DJ War is where top DJs go head-to-head, bringing their best mixes and energy to the stage. It's more than just playing tracks - it's about commanding the crowd, blending music with skill, and delivering an unforgettable experience.",
         coordinators: [
@@ -99,11 +99,11 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/xFactor.jpg",
-        ruleBook: "https://drive.google.com/file/d/1AYTKyyWb7tHv3ey62tBijdf7kovPpbQ6/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1bCkNcbp2rhALKk-RjOPIiMTTRucpn-WA/view?usp=sharing",
         register: "register.html",
         description: "This is a captivating event that blends the magic of Shayari, Poetry, Rap and Stand-up Comedy creating an unforgettable experience of emotions, rhythm and laughter. The participants have the pickup category-solo,duo and crew.",
         coordinators: [
-            { name: "Devine Alphonso", contact: "+91 6362563196" },
+            { name: "Divine Alphonso", contact: "+91 6366198659" },
             { name: "Rudransh Upadhyay", contact: "+91 9521121626" }
         ]
     },
@@ -114,7 +114,7 @@ const events = [
         time: "Waiting for time",
         venue: "Yet to be decided",
         image: "images/events/BeatBox.jpg",
-        ruleBook: "https://drive.google.com/file/d/1ksFbJCPhZyefPNJ8JOGNLXrvW3R-drkf/view?usp=sharing",
+        ruleBook: "https://drive.google.com/file/d/1mb9W_u4TCiAlgN5j8_jMNIUwpG5S5yDV/view?usp=sharing",
         register: "register.html",
         description: "In VOCAL VERTEX (Beat Boxing) is a competition, performance, or gathering where beatboxers showcase their skills in vocal percussion and they have to pickup the category either solo or duo only.",
         coordinators: [
