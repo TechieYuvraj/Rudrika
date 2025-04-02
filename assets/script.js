@@ -70,7 +70,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/Band.jpg",
         ruleBook: "https://drive.google.com/file/d/1l2jNkHQtJ8A2oZM4sHRA2AdG5RrHGELw/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "Rock the Stage is an electrifying musical competition where bands from various genres come together to showcase their talent, creativity, and stage presence. This event is designed to celebrate live music, foster collaboration among musicians, and provide a platform for emerging bands to make their mark.",
         coordinators: [
             { name: "Ketan Suthar", contact: "+91 9819678847" },
@@ -85,7 +85,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/DJwar.jpg",
         ruleBook: "https://drive.google.com/file/d/1JVyDrKB6e6haSD-igo7udTkrgZLL6JWx/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "Get ready for an electrifying battle of beats and rhythm! DJ War is where top DJs go head-to-head, bringing their best mixes and energy to the stage. It's more than just playing tracks - it's about commanding the crowd, blending music with skill, and delivering an unforgettable experience.",
         coordinators: [
             { name: "Aditya Kumawat", contact: "+91 8005563032" },
@@ -100,7 +100,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/xFactor.jpg",
         ruleBook: "https://drive.google.com/file/d/1AYTKyyWb7tHv3ey62tBijdf7kovPpbQ6/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "This is a captivating event that blends the magic of Shayari, Poetry, Rap and Stand-up Comedy creating an unforgettable experience of emotions, rhythm and laughter. The participants have the pickup category-solo,duo and crew.",
         coordinators: [
             { name: "Devine Alphonso", contact: "+91 6362563196" },
@@ -115,7 +115,7 @@ const events = [
         venue: "Yet to be decided",
         image: "images/events/BeatBox.jpg",
         ruleBook: "https://drive.google.com/file/d/1ksFbJCPhZyefPNJ8JOGNLXrvW3R-drkf/view?usp=sharing",
-        register: "https://docs.google.com/forms/d/e/1FAIpQLSew3ABJtxPiaKjajSTTin3IJvIgoEXXluhL9JvKhFtTL9PI1g/viewform",
+        register: "register.html",
         description: "In VOCAL VERTEX (Beat Boxing) is a competition, performance, or gathering where beatboxers showcase their skills in vocal percussion and they have to pickup the category either solo or duo only.",
         coordinators: [
             { name: "Arya Sharma", contact: "+91 8118848846" },
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("preloader").style.display = "none";
             document.getElementById("content").style.display = "block"; // Show main content
         }, 1000);
-    }, 30);
+    }, 3900);
 });
 
 // Function to get the event ID from the URL (?event= format)
