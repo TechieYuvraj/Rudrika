@@ -55,15 +55,18 @@
         <input type="email" id="leaderEmail" name="leaderEmail" required
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address">
 
+        <label for="collegeName">College Name:</label>
+        <input type="text" id="collegeName" name="collegeName" required><br><br>
+
         <label class="checkbox">
             I am a student of GIT College
             <input type="checkbox" id="gitStudent">
         </label>
-        <p style="color: rgb(192, 134, 134);">Kindly contact at 7398226246 if your Roll No is not in the list.</p>
 
         <div id="rollNoField" style="display: none;">
             <label>Enter Your Roll No:</label>
             <input type="text" id="rollNo" name="rollNo" />
+            <p style="color: rgb(192, 134, 134);">Kindly contact at 7398226246 if your Roll No is not in the list.</p>
         </div>
 
         <div id="memberDetails" class="hidden"></div>
@@ -80,7 +83,7 @@
         <button type="submit">Submit</button>
     </form>
 
-    <script src="/assets/register.js?v=2.3" type="module"></script>
+    <script src="/assets/register.js?v=2.4" type="module"></script>
     <Script src="/assets/pointer.js?v=2.3"></Script>
 </body>
 
