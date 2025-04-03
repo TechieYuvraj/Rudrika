@@ -282,7 +282,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
         .then(response => response.text())
         .then(data => {
             alert("Registration Successful!");
-            window.location.href = "register.html"; // Redirect to home
+            window.location.href = "index.html"; // Redirect to home
         })
         .catch(error => console.error("Error:", error));
 });
