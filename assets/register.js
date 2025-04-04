@@ -17,8 +17,8 @@ const eventTeamSizes = {
     "Euphonic Echoes": { solo: [1, 1], duo: [2, 2] },
     "Majestic Threads": { group: [5, 20] },
     "Blaze the Stage": { solo: [1, 1], duo: [2, 2], group: [4, 15] },
-    "Theatrical Thunder": { group: [8, 12] },
-    "Rock the Stage": { group: [3, 5] },
+    "Theatrical Thunder": { group: [4, 12] },
+    "Rock the Stage": { group: [3, 8] },
     "Turntable Titans": { solo: [1, 1] },
     "Beyond the Spotlight": { solo: [1, 1], duo: [2, 2], group: [4, 8] },
     "Vocal Vertex": { solo: [1, 1] }
