@@ -413,6 +413,7 @@ nav a { /* Desktop View */
     color: white;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    text-wrap-mode: nowrap;
     font-size: 22px;
     padding: 10px;
     transition: 0.3s ease-in-out;
@@ -427,7 +428,7 @@ nav a:hover {
 .logo2{
     width:  130px;
     height: 40%;
-    margin: 0 10px;
+    margin-right: 120px;
 }
 
 .logo1 {
