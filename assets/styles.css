@@ -135,6 +135,7 @@ pointer-particles {
 #rules-list {
     list-style-type: disclosure-closed;
     font-family: "Playfair Display", serif;
+    margin-bottom: 45px;
     letter-spacing: 1px;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -610,19 +611,19 @@ ul li {
     }
 }
 
-.celeb {
+/* .celeb {
     width: 65%;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .rulebook-btn {
     background-color: #1299d7;
     padding: 10px;
     font-size: 25px;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 8px 20px;
     text-align: center;
     transition: 0.3s;
     font-family: "Playfair Display", serif;

@@ -253,48 +253,6 @@ function createSnowflake() {
 // Create snowflakes at intervals
 setInterval(createSnowflake, 200);
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Create the popup overlay
-    let popupOverlay = document.createElement("div");
-    popupOverlay.id = "popupOverlay";
-
-    // Create the popup container
-    let popupContainer = document.createElement("div");
-    popupContainer.id = "popupContainer";
-
-    // Create the close button
-    let closeButton = document.createElement("span");
-    closeButton.id = "closePopup";
-    closeButton.innerHTML = "&times;"; // 'X' symbol
-
-    // Create the image element
-    let popupImage = document.createElement("img");
-    popupImage.id = "popupImage";
-    popupImage.src = "images/events/CelebNight.png"; // Replace with actual image path
-    popupImage.alt = "Celebrity Night Surprise";
-
-    // Append elements
-    popupContainer.appendChild(closeButton);
-    popupContainer.appendChild(popupImage);
-    popupOverlay.appendChild(popupContainer);
-    document.body.appendChild(popupOverlay);
-
-    // Close popup on button click
-    closeButton.addEventListener("click", function () {
-        popupOverlay.style.display = "none";
-    });
-
-    // Close popup when clicking outside the container
-    popupOverlay.addEventListener("click", function (event) {
-        if (event.target === popupOverlay) {
-            popupOverlay.style.display = "none";
-        }
-    });
-
-    // Automatically show the popup on page load
-    popupOverlay.style.display = "flex";
-});
-
 // Hide preloader after the page loads
 document.addEventListener("DOMContentLoaded", function () {
     let letters = document.querySelectorAll(".letter");
