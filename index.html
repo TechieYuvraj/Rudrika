@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +20,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" type="image/png" href="images/logo/favicon.png">
-    <link rel="stylesheet" href="assets/styles.css?v=2.5">
+    <link rel="stylesheet" href="assets/styles.css?v=2.6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    </noscript>
 
 </head>
+
 <body>
 
     <div id="preloader">
@@ -39,7 +44,7 @@
         <span class="letter">I</span>
         <span class="letter">K</span>
         <span class="letter">A</span>
-    </div>        
+    </div>
 
     <!-- partial:index.partial.html -->
     <pointer-particles></pointer-particles>
@@ -55,15 +60,15 @@
     <div id="snow-container"></div>
 
 
-    <!-- Navigation For Desktop-->
-    <nav class="navigation1">
+    <!-- Navigation For Desktop -->
+    <nav class="navigation1" aria-label="Desktop Navigation">
         <div class="navigation-btn">
             <a href="#event" class="shrikhand-regular">Events</a>
-            <a href="#Head Coordinators" class="shrikhand-regular">Head Coordinators</a>
-            <a href="#Registration Team" class="shrikhand-regular">Registration Team</a>
+            <a href="#head-coordinators" class="shrikhand-regular">Head Coordinators</a>
+            <a href="#registration-team" class="shrikhand-regular">Registration Team</a>
         </div>
         <div class="navigation-logo">
-            <img loading="lazy" src="images/logo/Rudrika1.png" alt="Rudrika Fest" class="logo2">
+            <img loading="lazy" src="images/logo/Rudrika1.png" alt="Rudrika Fest" class="logo2" />
         </div>
         <div class="navigation-btn">
             <a href="#gallery" class="shrikhand-regular">Gallery</a>
@@ -73,28 +78,27 @@
     </nav>
 
     <!-- Navigation for Mobile -->
-    <nav class="navigation">
-        <div class="menu-toggle" id="mobile-menu">
+    <nav class="navigation" aria-label="Mobile Navigation">
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
         <div class="navigation-logo">
-            <img loading="lazy" src="images/logo/Rudrika1.png" alt="Rudrika Fest" class="logo1">
+            <img loading="lazy" src="images/logo/Rudrika1.png" alt="Rudrika Fest" class="logo1" />
         </div>
         <div class="navigation-btn menu">
             <a href="#event" class="shrikhand-regular">Events</a>
-            <a href="#head coordinators" class="shrikhand-regular">Head Coordinators</a>
-            <a href="#Registration Team" class="shrikhand-regular">Registration Team</a>
+            <a href="#head-coordinators" class="shrikhand-regular">Head Coordinators</a>
+            <a href="#registration-team" class="shrikhand-regular">Registration Team</a>
             <a href="#gallery" class="shrikhand-regular">Gallery</a>
             <a href="#sponsors" class="shrikhand-regular">Sponsors</a>
             <a href="#contact" class="shrikhand-regular">Contact</a>
         </div>
     </nav>
 
-
-     <!-- Events Section -->
-     <section class="events-section" id="event">
+    <!-- Events Section -->
+    <section class="events-section" id="event">
         <h2 class="event-heading">The Cultural Fest</h2>
         <div id="event-container" class="event-container">
             <!-- Events will be loaded dynamically here -->
@@ -123,10 +127,14 @@
             <li>Any type of Alcoholic item is prohibited on the campus.</li>
             <li>If anybody found engaging in abusive behaviour or misconduct,they will be disqualified.</li>
             <li>Participants must respect the venue and maintain cleanliness.</li>
-            <li>Participants carrying expensive items will be responsible for any loss. The college will not be held responsible.</li>
+            <li>Participants carrying expensive items will be responsible for any loss. The college will not be held
+                responsible.</li>
         </ul>
-        <button class="rulebook-btn" onclick="window.open('https://drive.google.com/file/d/1MLursL7iX-2lU0jYahQTlspqk-EveFQA/view?usp=sharing', '_blank');">Download Rule Book</button>
-        <button class="rulebook-btn" onclick="window.open('https://rudrika.rtunotes.in/register.html', '_blank');">Register Here</button>
+        <button class="rulebook-btn"
+            onclick="window.open('https://drive.google.com/file/d/1MLursL7iX-2lU0jYahQTlspqk-EveFQA/view?usp=sharing', '_blank');">Download
+            Rule Book</button>
+        <button class="rulebook-btn"
+            onclick="window.open('https://rudrika.rtunotes.in/register.html', '_blank');">Register Here</button>
     </section>
 
     <!-- Coordinators Section -->
@@ -221,7 +229,7 @@
             </div>
         </div>
     </section>
-  
+
     <footer>
         <section class="contact-info" id="contact">
             <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
@@ -237,7 +245,8 @@
     </footer>
 
     <script src="assets/script.js?v=2.6"></script>
-    <script src="assets/pointer.js?v=2.5"></script>      
-      
+    <script src="assets/pointer.js?v=2.5"></script>
+
 </body>
+
 </html>
