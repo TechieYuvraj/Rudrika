@@ -286,14 +286,14 @@ document.querySelector("form").addEventListener("submit", function (event) {
     }
 
     // Proceed with form submission
-    fetch("https://script.google.com/macros/s/AKfycbzPKOfXeDYltJLmJuCr3FpC73LRmkJo3Sojdy6qE6BQEJuAOMfTXZlN4X4lRkmLXbI/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwzPSHJUblN6wauV3OvgvIO10KhjVFNsWhPxvBaqmoygOF5tLH90l8-lDx2kKd1tf8/exec", {
         method: "POST",
         body: new FormData(this)
     })
         .then(response => response.text())
         .then(data => {
             alert("Registration Successful!");
-            window.location.href = "index.html";
+            window.location.href = "https://rtunotes.in"; // Redirect to the desired page
         })
         .catch(error => {
             console.error("Error:", error);
