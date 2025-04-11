@@ -1,5 +1,38 @@
 const upiBaseLink = "upi://pay?pa=kritikarohilla11294@oksbi&tn=Click%20to%20pay&am=";
 
+// Static UPI Links for the payments
+const staticUPILinks = {
+    "Euphonic Echoes": {
+        solo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Euphonic%20Echoes%20Solo&am=199&cu=INR",
+        duo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Euphonic%20Echoes%20Duo&am=399&cu=INR"
+    },
+    "Majestic Threads": {
+        group: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Majestic%20Threads%20Group&am=799&cu=INR"
+    },
+    "Blaze the Stage": {
+        solo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Blaze%20the%20Stage%20Solo&am=299&cu=INR",
+        duo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Blaze%20the%20Stage%20Duo&am=499&cu=INR",
+        group: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Blaze%20the%20Stage%20Group&am=899&cu=INR"
+    },
+    "Theatrical Thunder": {
+        group: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Theatrical%20Thunder%20Group&am=999&cu=INR"
+    },
+    "Rock the Stage": {
+        group: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Rock%20the%20Stage%20Group&am=799&cu=INR"
+    },
+    "Turntable Titans": {
+        solo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Turntable%20Titans%20Solo&am=299&cu=INR"
+    },
+    "Beyond the Spotlight": {
+        solo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Beyond%20the%20Spotlight%20Solo&am=299&cu=INR",
+        duo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Beyond%20the%20Spotlight%20Duo&am=399&cu=INR",
+        group: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Beyond%20the%20Spotlight%20Group&am=699&cu=INR"
+    },
+    "Vocal Vertex": {
+        solo: "upi://pay?pa=kritikarohilla11294@oksbi&tn=Vocal%20Vertex%20Solo&am=199&cu=INR"
+    }
+};
+
 // Pricing table based on event and team size
 const eventPricing = {
     "Euphonic Echoes": { solo: 199, duo: 399 },
@@ -140,15 +173,14 @@ function updateMemberFields(teamSize) {
     }
 }
 
-// Update the UPI payment link
-function updatePaymentLink(event = "", type = "", size = 1) {
-    if (!event || !type) {
+function updatePaymentLink(event = "", type = "") {
+    if (!event || !type || !staticUPILinks[event] || !staticUPILinks[event][type]) {
         paymentLink.href = "#"; // Reset if no selection
         return;
     }
 
-    let amount = eventPricing[event][type] || 0;
-    paymentLink.href = `${upiBaseLink}${amount}&cu=INR`;
+    // Use the static UPI link
+    paymentLink.href = staticUPILinks[event][type];
 }
 
 function createSnowflake() {
