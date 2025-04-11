@@ -1,4 +1,4 @@
-const upiBaseLink = "upi://pay?pa=kritikarohilla11294@oksbi&tn=Click%20to%20pay&am=";
+// const upiBaseLink = "upi://pay?pa=kritikarohilla11294@oksbi&tn=Click%20to%20pay&am=";
 
 // Static UPI Links for the payments
 const staticUPILinks = {
