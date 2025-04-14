@@ -241,6 +241,40 @@ document.getElementById("generateQR").addEventListener("click", function () {
 
 import { validRollNumbers } from "./rollNumbers.js?v=1.4"; // Adjust the path if needed
 
+document.addEventListener("DOMContentLoaded", function () {
+    const gitCheckbox = document.getElementById("gitStudent");
+    const rollNoField = document.getElementById("rollNoField");
+    const utrField = document.getElementById("utrNumber");
+    const payButton = document.getElementById("paymentLink");
+    const scanToPayButton = document.getElementById("generateQR");
+    const qrCodeContainer = document.getElementById("qrCodeContainer");
+    const gitpayment = document.getElementById("gitpayment");
+    const gitUTR = document.getElementById("gitUTR");
+
+    // Toggle visibility based on GIT checkbox
+    gitCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+            rollNoField.style.display = "block"; // Show Roll No field
+            utrField.style.display = "none"; // Hide UTR field
+            payButton.style.display = "none"; // Hide Pay Now button
+            scanToPayButton.style.display = "none"; // Hide Scan to Pay button
+            qrCodeContainer.style.display = "none"; // Hide QR Code container
+            gitpayment.style.display = "none"; // Hide GIT label
+            gitUTR.style.display = "none"; // Hide UTR label
+            utrField.removeAttribute("required");
+        } else {
+            rollNoField.style.display = "none";
+            utrField.style.display = "block";
+            payButton.style.display = "inline-block";
+            scanToPayButton.style.display = "inline-block";
+            qrCodeContainer.style.display = "block";
+            gitpayment.style.display = "block"; // Show GIT label
+            gitUTR.style.display = "block"; // Show UTR label
+            utrField.setAttribute("required", "true");
+        }
+    });
+});
+
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
 
